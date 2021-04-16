@@ -1,1 +1,9 @@
-theme: jekyll-theme-cayman
+
+theme: jekyll-theme-leap-day
+# theme: jekyll-theme-cayman
+
+title: Workshop of Cross-Market Recommendation
+description: Workshop on Cross-Market Recommendation
+
+plugins:
+- jekyll-menus
