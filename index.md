@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+## XMRec: First Workshop of Cross-Market Recommendation @ RecSys 2021
 
-You can use the [editor on GitHub](https://github.com/xmrec/xmrec/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Online markets are spreading quickly across the globe, supporting a huge network of product sales to billions of customers with various cultures, lifestyles, economic interests, and languages. These global markets introduce many novel opportunities -- as well as challenges. Our workshop, called XMRec, concerns the problem of recommending relevant products to users in a target market (e.g., a resource-scarce market) by leveraging data from similar high-resource markets, e.g. using data from the U.S. market to improve recommendations in a target market. We hypothesize that data from one market can be used to improve recommendation in another.
+We aim to create a dynamic and interactive atmosphere where researchers of diverse backgrounds and interests can discuss their ideas on cross-market recommendation and how it can be further pursued in the community. 
+To this end, XMRec features a series of seed talks both from industry and academia, discussing the future of cross-market recommendation and its potentials as a new line of research. The seed talks will be followed by a panel discussion where a diverse set of researchers discuss their ideas and opinion about the topic. Finally, we will invite the participants and the panelists to take part in interactive brainstorming breakout sessions to further discuss their ideas. XMRec will also feature a competition focusing on cross-market training for recommendation. Our data challenge will be based on the data we have collected from several categories across six distinct markets. 
+We aim to motivate a range of studies (like analyzing market-specific biases, conversational recommendation, and predicting early adopters)  beyond the cross-domain recommendation by extending markets and content languages.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xmrec/xmrec/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Organizers:
+ - [Mohammad Aliannejadi](http://aliannejadi.com), University of Amsterdam, The Netherlands
+ - [Hamed Bonab](https://people.cs.umass.edu/~bonab/), University of Massachusetts Amherst, USA
+ - Ali Vardasbi, University of Amsterdam, The Netherlands
+ - [Evangelos Kanoulas](https://staff.fnwi.uva.nl/e.kanoulas/), University of Amsterdam, The Netherlands
+ - [James Allan](http://ciir.cs.umass.edu/~allan/), University of Massachusetts Amherst, USA
