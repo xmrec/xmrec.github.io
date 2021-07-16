@@ -55,4 +55,4 @@ The workshop topics include but are not limited to:
  - **Market-Specific Bias:** research on potential biases existing in various markets that could affect the cross-market recommendation.   
  - **Cross-Lingual Content-Based Recommendation:** research focusing on leveraging cross-lingual content for recommendation such as item descriptions and user reviews.   
  - **Cold-Start Recommendation:** research on leveraging interactions from warm-start markets to address the cold-start problem in other markets.
-Resource: works describing resources that can foster research on the cross-market recommendation.
+ - **Resource:** works describing resources that can foster research on the cross-market recommendation.
