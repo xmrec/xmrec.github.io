@@ -56,3 +56,7 @@ The workshop topics include but are not limited to:
  - **Cross-Lingual Content-Based Recommendation:** research focusing on leveraging cross-lingual content for recommendation such as item descriptions and user reviews.   
  - **Cold-Start Recommendation:** research on leveraging interactions from warm-start markets to address the cold-start problem in other markets.
  - **Resource:** works describing resources that can foster research on the cross-market recommendation.
+
+## Contact
+For queries, please contact us via [xmrec21@easychair.org](mailto:xmrec21@easychair.org).
+
