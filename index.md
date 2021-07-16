@@ -1,6 +1,6 @@
-## XMRec: First Workshop of Cross-Market Recommendation @ RecSys 2021
+# XMRec: First Workshop of Cross-Market Recommendation @ RecSys 2021
 
-### Overview
+## Overview
 Online markets are spreading quickly across the globe, supporting a huge network of product sales to billions of customers with various cultures, lifestyles, economic interests, and languages. These global markets introduce many novel opportunities -- as well as challenges. Our workshop, called XMRec, concerns the problem of recommending relevant products to users in a target market (e.g., a resource-scarce market) by leveraging data from similar high-resource markets, e.g. using data from the U.S. market to improve recommendations in a target market. We hypothesize that data from one market can be used to improve recommendation in another.
 We aim to create a dynamic and interactive atmosphere where researchers of diverse backgrounds and interests can discuss their ideas on cross-market recommendation and how it can be further pursued in the community. 
 To this end, XMRec features a series of seed talks both from industry and academia, discussing the future of cross-market recommendation and its potentials as a new line of research. The seed talks will be followed by a panel discussion where a diverse set of researchers discuss their ideas and opinion about the topic. Finally, we will invite the participants and the panelists to take part in interactive brainstorming breakout sessions to further discuss their ideas. 
@@ -14,7 +14,7 @@ We aim to motivate a range of studies (like analyzing market-specific biases, co
  - [Vanessa Murdock](https://www.amazon.science/author/vanessa-murdock), Amazon Inc., USA
  - [James Allan](http://ciir.cs.umass.edu/~allan/), University of Massachusetts Amherst, USA
 
-### Important Dates
+## Important Dates
 
 Time zone: Anywhere on Earth (AoE)
 
@@ -33,7 +33,6 @@ Time zone: Anywhere on Earth (AoE)
 
 ## Submissions
 
-
 Papers must be submitted by **August 16, 2021 (23:59 AoE)** via EasyChair. The submissions should be in English and prepared in PDF format according to the new single-column format  ([Microsoft Word](https://www.acm.org/binaries/content/assets/publications/taps/acm_submission_template.docx) or [Latex](https://www.acm.org/binaries/content/assets/publications/consolidated-tex-template/acmart-primary.zip) formats). If you are using Overleaf, you can use the following code (\documentclass[manuscript]{acmart}). The review process is single-blind, handled electronically through EasyChair. Accepted papers will be included in the workshop proceedings and at least one author of each accepted contribution must attend the workshop. Accepted papers are given a poster presentation slot at the workshop.  The ideal length of a paper for the XMRec workshop is between 4-8 pages (excluding references). 
  
 Submission Page: [EasyChair](https://easychair.org/conferences/?conf=xmrec21)
@@ -45,7 +44,7 @@ The following paper categories are welcome:
 
 All accepted works will be presented at the workshop. Moreover, the research papers can be included in an open-access post-proceedings volume of CEUR Workshop Proceedings [http://ceur-ws.org/](http://ceur-ws.org/).
 
-### Topics
+## Topics
 The workshop topics include but are not limited to:
 
  - **Machine Learning Approaches:** research focusing on the application of various machine learning approaches for knowledge transfer such as domain adaptation, semi-supervised learning, transfer learning, data augmentation, meta-learning, and knowledge distillation for the cross-market recommendation.
