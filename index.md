@@ -11,8 +11,8 @@ We aim to motivate a range of studies (like analyzing market-specific biases, co
  - [Hamed Bonab](https://people.cs.umass.edu/~bonab/), University of Massachusetts Amherst, USA
  - Ali Vardasbi, University of Amsterdam, The Netherlands
  - [Evangelos Kanoulas](https://staff.fnwi.uva.nl/e.kanoulas/), University of Amsterdam, The Netherlands
- - [Vanessa Murdock](https://www.amazon.science/author/vanessa-murdock), Amazon Inc., USA
  - [James Allan](http://ciir.cs.umass.edu/~allan/), University of Massachusetts Amherst, USA
+ - [Vanessa Murdock](https://www.amazon.science/author/vanessa-murdock), Amazon Inc., USA
 
 ## Important Dates
 
