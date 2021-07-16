@@ -25,7 +25,6 @@ Time zone: Anywhere on Earth (AoE)
 
 ## Confirmed Speakers
  - Julian McAuley, UCSD, USA
- - Rahul Bhagat, Amazon Inc., USA
 
 ## Confirmed Panelists
  - Julian McAuley, UCSD, USA
