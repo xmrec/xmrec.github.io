@@ -6,7 +6,7 @@ We aim to create a dynamic and interactive atmosphere where researchers of diver
 To this end, XMRec features a series of seed talks both from industry and academia, discussing the future of cross-market recommendation and its potentials as a new line of research. The seed talks will be followed by a panel discussion where a diverse set of researchers discuss their ideas and opinion about the topic. Finally, we will invite the participants and the panelists to take part in interactive brainstorming breakout sessions to further discuss their ideas. 
 We aim to motivate a range of studies (like analyzing market-specific biases, conversational recommendation, and predicting early adopters)  beyond the cross-domain recommendation by extending markets and content languages.
 
-## Organizers:
+## Organizing Committee
  - [Mohammad Aliannejadi](http://aliannejadi.com), University of Amsterdam, The Netherlands
  - [Hamed Bonab](https://people.cs.umass.edu/~bonab/), University of Massachusetts Amherst, USA
  - Ali Vardasbi, University of Amsterdam, The Netherlands
