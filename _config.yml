@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 # theme: jekyll-theme-cayman
 
-title: Workshop on Cross-Market Recommendation
+title: Workshop on Cross-Market Recommendation (XMRec)
 description: The First Workshop on Cross-Market Recommendation, co-located with RecSys 2021, 02 October 2021, Vritual Event, Amsterdam, Netherlands
 
 plugins:
