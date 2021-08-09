@@ -25,10 +25,13 @@ Time zone: Anywhere on Earth (AoE)
 
 ## Confirmed Speakers
  - Julian McAuley, UCSD, USA
+ - ‪Ben Carterette‬, Spotify, USA
 
 ## Confirmed Panelists
  - Julian McAuley, UCSD, USA
  - Rahul Bhagat, Amazon Inc., USA
+ - Ben Carterette‬, Spotify, USA
+ - Elisabeth Lex, Graz University of Technology, Austria
 
 ## Submissions
 
