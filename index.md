@@ -24,14 +24,14 @@ Time zone: Anywhere on Earth (AoE)
 - Workshop day:	October 2, 2021
 
 ## Confirmed Speakers
- - Julian McAuley, UCSD, USA
- - ‪Ben Carterette‬, Spotify, USA
+ - [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/), UCSD, USA
+ - ‪[Ben Carterette](http://ir.cis.udel.edu/~carteret/)‬, Spotify, USA
 
 ## Confirmed Panelists
- - Julian McAuley, UCSD, USA
- - Rahul Bhagat, Amazon Inc., USA
- - Ben Carterette‬, Spotify, USA
- - Elisabeth Lex, Graz University of Technology, Austria
+ - [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/), UCSD, USA
+ - [Rahul Bhagat](https://www.linkedin.com/in/rahul-bhagat-6262731/), Amazon Inc., USA
+ - [Ben Carterette](http://ir.cis.udel.edu/~carteret/)‬, Spotify, USA
+ - [Elisabeth Lex](https://elisabethlex.info/), Graz University of Technology, Austria
 
 ## Submissions
 
