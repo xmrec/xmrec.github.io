@@ -18,7 +18,7 @@ We aim to motivate a range of studies (like analyzing market-specific biases, co
 
 Time zone: Anywhere on Earth (AoE)
 
-- Submission deadline: August 16, 2021
+- Submission deadline: ~~August 16, 2021~~ August 23, 2021
 - Notification:	September 8, 2021
 - Camera ready: September 15, 2021
 - Workshop day:	October 2, 2021
