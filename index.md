@@ -32,6 +32,7 @@ Time zone: Anywhere on Earth (AoE)
  - [Rahul Bhagat](https://www.linkedin.com/in/rahul-bhagat-6262731/), Amazon Inc., USA
  - [Ben Carterette](http://ir.cis.udel.edu/~carteret/)‬, Spotify, USA
  - [Elisabeth Lex](https://elisabethlex.info/), Graz University of Technology, Austria
+ - [Max Harper](https://maxharp3r.github.io/), Amazon Inc., USA
 
 ## Submissions
 
