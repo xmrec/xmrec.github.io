@@ -6,14 +6,6 @@ We aim to create a dynamic and interactive atmosphere where researchers of diver
 To this end, XMRec features a series of seed talks both from industry and academia, discussing the future of cross-market recommendation and its potentials as a new line of research. The seed talks will be followed by a panel discussion where a diverse set of researchers discuss their ideas and opinion about the topic. Finally, we will invite the participants and the panelists to take part in interactive brainstorming breakout sessions to further discuss their ideas. 
 We aim to motivate a range of studies (like analyzing market-specific biases, conversational recommendation, and predicting early adopters)  beyond the cross-domain recommendation by extending markets and content languages.
 
-## Organizing Committee
- - [Mohammad Aliannejadi](http://aliannejadi.com), University of Amsterdam, The Netherlands
- - [Hamed Bonab](https://people.cs.umass.edu/~bonab/), University of Massachusetts Amherst, USA
- - Ali Vardasbi, University of Amsterdam, The Netherlands
- - [Evangelos Kanoulas](https://staff.fnwi.uva.nl/e.kanoulas/), University of Amsterdam, The Netherlands
- - [James Allan](http://ciir.cs.umass.edu/~allan/), University of Massachusetts Amherst, USA
- - [Vanessa Murdock](https://www.amazon.science/author/vanessa-murdock), Amazon Inc., USA
-
 ## Important Dates
 
 Time zone: Anywhere on Earth (AoE)
@@ -23,11 +15,11 @@ Time zone: Anywhere on Earth (AoE)
 - Camera ready: September 15, 2021
 - Workshop day:	October 2, 2021
 
-## Confirmed Speakers
+## Keynote Speakers
  - [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/), UCSD, USA
  - ‪[Ben Carterette](http://ir.cis.udel.edu/~carteret/)‬, Spotify, USA
 
-## Confirmed Panelists
+## Panelists
  - [Rahul Bhagat](https://www.linkedin.com/in/rahul-bhagat-6262731/), Amazon Inc., USA
  - [Ben Carterette](http://ir.cis.udel.edu/~carteret/)‬, Spotify, USA
  - [Elisabeth Lex](https://elisabethlex.info/), Graz University of Technology, Austria
@@ -73,6 +65,14 @@ The workshop topics include but are not limited to:
  - **Cross-Lingual Content-Based Recommendation:** research focusing on leveraging cross-lingual content for recommendation such as item descriptions and user reviews.   
  - **Cold-Start Recommendation:** research on leveraging interactions from warm-start markets to address the cold-start problem in other markets.
  - **Resource:** works describing resources that can foster research on the cross-market recommendation.
+
+## Organizing Committee
+ - [Mohammad Aliannejadi](http://aliannejadi.com), University of Amsterdam, The Netherlands
+ - [Hamed Bonab](https://people.cs.umass.edu/~bonab/), University of Massachusetts Amherst, USA
+ - Ali Vardasbi, University of Amsterdam, The Netherlands
+ - [Evangelos Kanoulas](https://staff.fnwi.uva.nl/e.kanoulas/), University of Amsterdam, The Netherlands
+ - [James Allan](http://ciir.cs.umass.edu/~allan/), University of Massachusetts Amherst, USA
+ - [Vanessa Murdock](https://www.amazon.science/author/vanessa-murdock), Amazon Inc., USA
 
 ## Contact
 For queries, please contact us via [m.aliannejadi@uva.nl](mailto:m.aliannejadi@uva.nl).
