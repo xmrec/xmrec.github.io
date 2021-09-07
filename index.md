@@ -51,15 +51,16 @@ XMRec participants should be registered at RecSys'21. However, we also need the 
 ## Submissions
 
 Papers must be submitted by **August 16, 2021 (23:59 AoE)** via EasyChair. The submissions should be in English and prepared in PDF format according to the new single-column format  ([Microsoft Word](https://www.acm.org/binaries/content/assets/publications/taps/acm_submission_template.docx) or [Latex](https://www.acm.org/binaries/content/assets/publications/consolidated-tex-template/acmart-primary.zip) formats). If you are using Overleaf, you can use the following code (\documentclass[manuscript]{acmart}). The review process is single-blind, handled electronically through EasyChair. Accepted papers will be included in the workshop proceedings and at least one author of each accepted contribution must attend the workshop. Accepted papers are given a poster presentation slot at the workshop.  The ideal length of a paper for the XMRec workshop is between 4-8 pages (excluding references). 
- 
-Submission Page: [EasyChair](https://easychair.org/conferences/?conf=xmrec21)
 
 The following paper categories are welcome:
 - research papers on novel, original, and unpublished work (pre-prints submitted to ArXiv are eligible). **Max length: 8 pages, plus references**
 - position and prospective papers. **Max length: 8 pages, plus references**
 - extended abstracts summarizing published results. **Max length: 4 pages, plus references**
 
-All accepted works will be presented at the workshop. Moreover, the research papers can be included in an open-access post-proceedings volume of CEUR Workshop Proceedings [http://ceur-ws.org/](http://ceur-ws.org/).
+All accepted works will be presented at the workshop.
+
+## Accepter Papers
+- Martin Milenkoski, Diego Antognini and Claudiu Musat, "Recommending Burgers based on Pizza Preferences: Addressing Data Sparsity with a Product of Experts"
 
 ## Topics
 The workshop topics include but are not limited to:
@@ -74,5 +75,5 @@ The workshop topics include but are not limited to:
  - **Resource:** works describing resources that can foster research on the cross-market recommendation.
 
 ## Contact
-For queries, please contact us via [xmrec21@easychair.org](mailto:xmrec21@easychair.org).
+For queries, please contact us via [m.aliannejadi@uva.nl](mailto:m.aliannejadi@uva.nl).
 
