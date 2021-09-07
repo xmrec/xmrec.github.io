@@ -46,9 +46,7 @@ Time zone: Anywhere on Earth (AoE)
 | 18:50 - 19:00 | 12:50 - 13:00 | 09:50 - 10:00 | 00:50 - 01:00 | Closing                                                  |
 
 ## Registration
-XMRec participants should be registered at RecSys'21. However, we also need the list of registered participants to share the Zoom link of the workshop. Therefore, please register to XMRec, using the following Google Form:
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScOB2qle0Aejzo3Q1xbT5ElDgcRDPVcj3V1Yoybk_qmddQNMw/viewform?embedded=true" width="640" height="642" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+XMRec participants should be registered at RecSys'21. However, we also need the list of registered participants to share the Zoom link of the workshop. Therefore, please register to XMRec, using [Google Form](https://forms.gle/Vq8HVkP6G9cc9Sat6).
 
 ## Submissions
 
