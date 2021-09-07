@@ -7,5 +7,7 @@ description: The First Workshop on Cross-Market Recommendation, co-located with 
 
 google_analytics: UA-206094552-1
 
+markdown: kramdown
+
 plugins:
 - jekyll-menus
