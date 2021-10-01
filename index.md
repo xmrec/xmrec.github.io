@@ -40,6 +40,24 @@ Time zone: Anywhere on Earth (AoE)
 ## Registration
 XMRec participants should be registered at RecSys'21. However, we also need the list of registered participants to share the Zoom link of the workshop. Therefore, please register to XMRec, using [Google Form](https://forms.gle/Vq8HVkP6G9cc9Sat6).
 
+
+## Keynote Talks
+
+### Towards an Understanding of Music and Podcast Recommendation Across Markets
+
+*Speaker*: [Ben Carterette](http://ir.cis.udel.edu/~carteret/), Spotify, USA
+*Abstract:* Spotify is an international platform for music and podcast search and recommendation. Available in nearly 200 markets, it helps over 5 million creators connect to over 350 million listeners worldwide each month. But the ways in which people listen to, think about, and incorporate music and audio into their day-to-day lives can vary a great deal between cultures. What listeners in the U.S. want from an audio recommendation service may be very different from what listeners in India want, for example. In this talk, I will discuss some of the signals we see that indicate differences in listener behavior between markets; the extent to which "market" may (or may not) play a role in these differences; and given these differences how we can train recommendation models that connect listeners all over the world to the work of creators they'll love.
+
+### Algorithmic Bias in Recommender Systems: Understanding the Roles of Users, Products, and Marketing
+*Speaker*: [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/), UCSD, USA
+*Abstract*: In this talk I'll give a high-level overview fair and unbiased machine learning, focusing on an emerging line of work that adapts fairness techniques to personalized recommendation, where questions of "fairness" generally center around underrepresented groups receiving reduced utility from recommendations. After giving a broad overview of the topic, I'll present our own work on marketing bias in recommender systems. Our work is related to the notion of self-congruity, i.e., users' tendency to select items whose marketing matches their self-image. We'll look at specific examples regarding gender identity and body type. Our main research questions are (1) to what extent is self-congruity reflected in actual purchase data; (2) do recommender systems have reduced utility to users whose identity is underrepresented among marketing images; and (3) can these negative effects be algorithmically mitigated?
+
+
+
+## Accepter Papers
+- Martin Milenkoski, Diego Antognini and Claudiu Musat, <a href="https://xmrec.github.io/papers/21-xmrec-milenkoski.pdf" target="_blank">Recommending Burgers based on Pizza Preferences: Addressing Data Sparsity with a Product of Experts</a>"
+
+
 ## Submissions
 
 Papers must be submitted by **August 16, 2021 (23:59 AoE)** via EasyChair. The submissions should be in English and prepared in PDF format according to the new single-column format  ([Microsoft Word](https://www.acm.org/binaries/content/assets/publications/taps/acm_submission_template.docx) or [Latex](https://www.acm.org/binaries/content/assets/publications/consolidated-tex-template/acmart-primary.zip) formats). If you are using Overleaf, you can use the following code (\documentclass[manuscript]{acmart}). The review process is single-blind, handled electronically through EasyChair. Accepted papers will be included in the workshop proceedings and at least one author of each accepted contribution must attend the workshop. Accepted papers are given a poster presentation slot at the workshop.  The ideal length of a paper for the XMRec workshop is between 4-8 pages (excluding references). 
@@ -50,9 +68,6 @@ The following paper categories are welcome:
 - extended abstracts summarizing published results. **Max length: 4 pages, plus references**
 
 All accepted works will be presented at the workshop.
-
-## Accepter Papers
-- Martin Milenkoski, Diego Antognini and Claudiu Musat, "Recommending Burgers based on Pizza Preferences: Addressing Data Sparsity with a Product of Experts"
 
 ## Topics
 The workshop topics include but are not limited to:
