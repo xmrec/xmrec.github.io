@@ -1,0 +1,65 @@
+<style>
+    mark { 
+      background-color: rgb(216, 216, 216);
+      color: black;
+    }
+    li{
+        margin: 10px 0;
+    } 
+</style>
+
+<h1>Data</h1>
+<p>The training and validation as well as the test run can be downloaded <a href="#">here</a>.
+<p>The data is structured as follows:</p>
+<ul>
+    <li>There are three folders 
+        <mark><code>source_1</code></mark>,
+        <mark><code>source_2</code></mark>, and 
+        <mark><code>source_3</code></mark>;
+        containing the data of the source markets. Inside each, the following file can be found:
+        <ul>
+            <li>
+                <mark><code>train.tsv</code></mark>: A tab separated file, containing the <b>Training</b> data with the following format:
+                <p><code>
+                    userId	itemId	rating
+                </p></code>
+                where the first column <code>userId</code> is the user unique id, the second column <code>itemId</code> is the item unique id, and the third column <code>rating</code> is the rating (an integer ranging from 1 to 5).
+                This means that our training data only contains the <b>positive</b> samples. All the other (user, item) pairs are unknown and can be considered <b>negative</b> during training.
+            </li>
+        </ul>
+    </li>
+    <li>
+        There are two folders
+        <mark><code>target_1</code></mark>, and 
+        <mark><code>target_2</code></mark>; containing the data of the target markets. Inside each, the following files can be found:
+        <ul>
+            <li>
+                <mark><code>train.tsv</code></mark>: 
+                A tab separated file, containing the <b>Training</b> data with <code>userId</code>, <code>itemId</code>, and <code>rating</code> fields the same as above.
+            </li>
+            <li>
+                <mark><code>valid_qrel.tsv</code></mark>:
+                The <b>Validation positive</b> samples, with a structure similar to the <mark><code>train.tsv</code></mark>.
+                As discussed <a href="Task.html#:~:text=For%20the%20target%20markets,%20split."> here</a>, the validation set only has one positive sample per user.
+            </li>
+            <li>
+                <mark><code>valid_qrun.tsv</code></mark>:
+                The <b>Validation</b> samples. For consistency of results between different teams, we provide you 99 negative samples for each unique <code>userId</code> as follows:
+                <p><code>
+                    userId	itemId1,itemId2,...,itemId100
+                </code></p>
+                where the two columns are separated by a tab and the list of items are separated by commas. There are 99 negative samples and 1 positive sample (identified in the <mark><code>valid_qrel.tsv</code></mark> file) in the list. Your model should rerank these 100 items per user.
+            </li>
+            <li>
+                <mark><code>test_qrun.tsv</code></mark>:
+                The <b>Test candidate</b> samples. As is common in recommendation systems, we provide you 100 candidate items for each unique <code>userId</code> as follows:
+                <p><code>
+                    userId	itemId1,itemId2,...,itemId100
+                </code></p>
+                where the two columns are separated by a tab and the list of negative items are separated by commas.
+                These 100 items should be reranked by your models and the top 10 items for each user should be reported with their scores.
+                As discussed <a href="Task.html#:~:text=For%20the%20target%20markets,%20split."> here</a>, only one item from this list of 100 items is a positive sample and the rest 99 items are negative samples.
+            </li>
+        </ul>
+    </li>
+</ul>

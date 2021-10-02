@@ -1,0 +1,15 @@
+<style>
+    mark { 
+      background-color: rgb(216, 216, 216);
+      color: black;
+    }
+    </style>
+
+<h1 id="Evaluation">Evaluation</h1>
+<p>
+    We evaluate the submissions based on their average nDCG@10.
+    As discussed in <a href=Task.html#:~:text=For%20each,randomly)>submission guidlines</a>, the scores of items are sorted for each user and the top 10 items are considered for evaluation.
+    For the total evaluation, we concatenate the users of the target markets (<mark><code>target_1.scores.tsv</code></mark> and <mark><code>target_2.scores.tsv</code></mark>) and compute the nDCG@10 on the resulting list. The teams are ranked based on this metric.
+    <br>
+    For information purposes we also report separate nDCG@10 and HR@10 for each target market, too.
+</p>

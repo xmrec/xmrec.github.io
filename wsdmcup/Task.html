@@ -1,0 +1,45 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<style>
+    mark { 
+      background-color: rgb(216, 216, 216);
+      color: black;
+    }
+    </style>
+
+<h1>Task</h1>
+<h2>Problem Definition</h2>
+<p>
+    Given a global set of items \(\mathcal{I}\), 
+    we define a market \(\mathbb{M}\) as the collection of its users \(U(\mathbb{M})\) together with their interactions (i.e. ratings and reviews) with items from \(\mathcal{I}\).
+    Generally, a user can interact with different markets, but for simplicity, we assume that the set of users in each market are mutually disjoint with any other parallel market.
+    In this competition, we have three source markets, \(\{S_{1}, S_{2}, S_{3}\}\), and two target markets, \(\{T_{1}, T_{2}\}\). 
+    
+    The goal is to have the best possible recommender system in terms of nDCG@10 on the target markets \(\{T_{1}, T_{2}\}\).
+    For that, you can use the data on these markets and also get help from the data available from the source markets \(\{S_{1}, S_{2}, S_{3}\}\).
+</p>
+
+<h2>Train, Validation, and Test Split</h2>
+<p>
+    The source markets are used for training, and therefore they are provided in a single <b>Train</b> split.
+    For the target markets, we leave one interaction of each user out for the <b>Test</b> split, and one other interaction for the <b>Validation</b> split. All the remaining interactions are given as the <b>Train</b> split. As usual, you are given only the Train and Validation splits.
+</p>
+
+<h2 id=submissions>Submissions</h2>
+<p>
+    Your submissions should be two tab separated files (<mark><code>target_1.scores.tsv</code></mark> and <mark><code>target_2.scores.tsv</code></mark>) with each line containing three columns as follows:
+
+    <p><code>
+        userId	itemId	score
+    </code></p>
+    where the first column <code>userId</code> is the user unique id, the second column <code>itemId</code> is the item unique id, and the third column <code>score</code> is the score your model assigns to this (user, item) pair.
+    For example, each of your <mark><code>.score.tsv</code></mark> files should look like this:
+    <p><code>
+        VA	E2	1.0 
+        VA	FQ	0.9 
+        VA	WS	1.1
+        ...
+    </code></p>
+    For each user (i.e. each unique value for <code>userId</code>), the items are sorted based on their score in a descending order (equal scores are handled randomly) and the top 10 items in the ranked list are used for <a href=evaluation.html>evaluation</a>.
+</p>
