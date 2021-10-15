@@ -49,11 +49,11 @@ This is how your zip file should look like:
 <code>
     &nbsp;submission.zip<br>&nbsp;&nbsp;
     &#x251C;&#x2500;&#x2500; t1<br>&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; test_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* scores of test items \*/<br>&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; valid_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;/\* scores of validation items \*/<br>&nbsp;&nbsp;	
+    &nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; test_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* scores of test items */<br>&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; valid_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;/* scores of validation items */<br>&nbsp;&nbsp;	
     &#x251C;&#x2500;&#x2500; t2<br>&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; test_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* scores of test items \*/<br>&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; valid_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;/\* scores of validation items \*/<br>&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; test_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* scores of test items */<br>&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; valid_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;/* scores of validation items */<br>&nbsp;&nbsp;
 </code>
 
 ## Evaluation
