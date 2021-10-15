@@ -29,71 +29,73 @@ For the target markets, we leave one interaction of each user out for the **Test
 
 ### Submissions
 
-Your submissions should be two tab separated files (<mark><code>target_1.scores.tsv</code></mark> and <mark><code>target_2.scores.tsv</code></mark>) with each line containing three columns as follows:
+Your submissions should be two tab separated files (*```target_1.scores.tsv```* and *```target_2.scores.tsv```*) with each line containing three columns as follows:
 
-<code>
+```
 userId	itemId	score
-</code>
-where the first column <code>userId</code> is the user unique id, the second column <code>itemId</code> is the item unique id, and the third column <code>score</code> is the score your model assigns to this (user, item) pair.
-For example, each of your <mark><code>.score.tsv</code></mark> files should look like this:
-<code>
+```
+where the first column ```userId``` is the user unique id, the second column ```itemId``` is the item unique id, and the third column ```score``` is the score your model assigns to this (user, item) pair.
+For example, each of your *```.score.tsv```* files should look like this:
+```
 VA	E2	1.0 
 VA	FQ	0.9 
 VA	WS	1.1
 ...
-</code>
-For each user (i.e. each unique value for <code>userId</code>), the items are sorted based on their score in a descending order (equal scores are handled randomly) and the top 10 items in the ranked list are used for evaluation.
+```
+For each user (i.e. each unique value for ```userId```), the items are sorted based on their score in a descending order (equal scores are handled randomly) and the top 10 items in the ranked list are used for evaluation.
 
 
 ## Evaluation
 
 We evaluate the submissions based on their average nDCG@10.
 As discussed in submission guidlines, the scores of items are sorted for each user and the top 10 items are considered for evaluation.
-For the total evaluation, we concatenate the users of the target markets (<mark><code>target_1.scores.tsv</code></mark> and <mark><code>target_2.scores.tsv</code></mark>) and compute the nDCG@10 on the resulting list. The teams are ranked based on this metric.
+For the total evaluation, we concatenate the users of the target markets (*```target_1.scores.tsv```* and *```target_2.scores.tsv```*) and compute the nDCG@10 on the resulting list. The teams are ranked based on this metric.
 <br>
 For information purposes we also report separate nDCG@10 and HR@10 for each target market, too.
 
 
 ## Data
-The training and validation as well as the test run can be downloaded <a href="#">here</a>.
+The training and validation as well as the test run can be downloaded [here](#).
 The data is structured as follows:
 
 - There are three folders 
-<mark><code>source_1</code></mark>,
-<mark><code>source_2</code></mark>, and 
-<mark><code>source_3</code></mark>;
+*```s_1```*,
+*```s_2```*, and 
+*```s_3```*;
 containing the data of the source markets. Inside each, the following file can be found:
-    - <mark><code>train.tsv</code></mark>: A tab separated file, containing the **Training** data with the following format:
-        <code>
+    - *```train.tsv```*: A tab separated file, containing the **Training** data with the following format:
+        ```
             userId	itemId	rating
-        </code>
-        where the first column <code>userId</code> is the user unique id, the second column <code>itemId</code> is the item unique id, and the third column <code>rating</code> is the rating (an integer ranging from 1 to 5).
+        ```
+        where the first column ```userId``` is the user unique id, the second column ```itemId``` is the item unique id, and the third column ```rating``` is the rating (an integer ranging from 1 to 5).
         This means that our training data only contains the **positive** samples. All the other (user, item) pairs are unknown and can be considered **negative** during training.
 
 - There are two folders
-<mark><code>target_1</code></mark>, and 
-<mark><code>target_2</code></mark>; containing the data of the target markets. Inside each, the following files can be found:
-    - <mark><code>train.tsv</code></mark>: 
-        A tab separated file, containing the **Training** data with <code>userId</code>, <code>itemId</code>, and <code>rating</code> fields the same as above.
-    - <mark><code>valid_qrel.tsv</code></mark>:
-        The **Validation positive** samples, with a structure similar to the <mark><code>train.tsv</code></mark>.
+*```t_1```*, and 
+*```t_2```*; containing the data of the target markets. Inside each, the following files can be found:
+    - *```train.tsv```*: 
+        A tab separated file, containing the **Training** data with ```userId```, ```itemId```, and ```rating``` fields the same as above.
+    - *```valid_qrel.tsv```*:
+        The **Validation positive** samples, with a structure similar to the *```train.tsv```*.
         Note that, the validation set only has one positive sample per user.
-    - <mark><code>valid_qrun.tsv</code></mark>:
-        The **Validation** samples. For consistency of results between different teams, we provide you 99 negative samples for each unique <code>userId</code> as follows:
-        <code>
+    - *```valid_qrun.tsv```*:
+        The **Validation** samples. For consistency of results between different teams, we provide you 99 negative samples for each unique ```userId``` as follows:
+        ```
             userId	itemId1,itemId2,...,itemId100
-        </code>
-        where the two columns are separated by a tab and the list of items are separated by commas. There are 99 negative samples and 1 positive sample (identified in the <mark><code>valid_qrel.tsv</code></mark> file) in the list. Your model should rerank these 100 items per user.
-    - <mark><code>test_qrun.tsv</code></mark>:
-        The **Test candidate** samples. As is common in recommendation systems, we provide you 100 candidate items for each unique <code>userId</code> as follows:
-        <code>
+        ```
+        where the two columns are separated by a tab and the list of items are separated by commas. There are 99 negative samples and 1 positive sample (identified in the *```valid_qrel.tsv```* file) in the list. Your model should rerank these 100 items per user.
+    - *```test_qrun.tsv```*:
+        The **Test candidate** samples. As is common in recommendation systems, we provide you 100 candidate items for each unique ```userId``` as follows:
+        ```
             userId	itemId1,itemId2,...,itemId100
-        </code>
+        ```
         where the two columns are separated by a tab and the list of negative items are separated by commas.
         These 100 items should be reranked by your models and the top 10 items for each user should be reported with their scores.
         Only one item from this list of 100 items is a positive sample and the rest 99 items are negative samples.
 
-
+## Sponsorship
+The XMRec WSDM Cup looks for a wide range of financial supports, ranging from the support of top teams award to computational power. Please check the [Call for Sponsorship](https://xmrec.github.io//wsdmcup/sponsorship.pdf) for more information.
+        
 ## Terms and Conditions
 The XMRec dataset is free to download for research purposes.
 Each team is allowed to submit one run per day and a maximum of 100 runs in total.
