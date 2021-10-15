@@ -16,10 +16,10 @@ To participate register to [Codalab](https://codalab.org/) and join our task (co
 Given a global set of items I, 
 we define a market M as the collection of its users U(M) together with their interactions (i.e. ratings and reviews) with items from I.
 Generally, a user can interact with different markets, but for simplicity, we assume that the set of users in each market are mutually disjoint with any other parallel market.
-In this competition, we have three source markets, s_1, s_2, s_3, and two target markets, t_1, t_2. 
+In this competition, we have three source markets, s1, s2, and s3, and two target markets, t1 and t2. 
 
-The goal is to have the best possible recommender system in terms of nDCG@10 on the target markets t_1, t_2.
-For that, you can use the data on these markets and also get help from the data available from the source markets s_1, s_2, s_3.
+The goal is to have the best possible recommender system in terms of nDCG@10 on the target markets t1 and t2.
+For that, you can use the data on these markets and also get help from the data available from the source markets s1, s2, and s3.
 
 
 ### Train, Validation, and Test Split
