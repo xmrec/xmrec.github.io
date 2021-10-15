@@ -49,11 +49,11 @@ This is how your zip file should look like:
 
 &nbsp;submission.zip<br>&nbsp;&nbsp;
 &#x251C;&#x2500;&#x2500; t1<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; test_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* scores of test items */<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; valid_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;/* scores of validation items */<br>&nbsp;&nbsp;	
+&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; test_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* scores of test items \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; valid_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;/\* scores of validation items \*/<br>&nbsp;&nbsp;	
 &#x251C;&#x2500;&#x2500; t2<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; test_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* scores of test items */<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; valid_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;/* scores of validation items */<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; test_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* scores of test items \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; valid_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;/\* scores of validation items \*/<br>&nbsp;&nbsp;
 
 
 ## Evaluation
@@ -68,26 +68,26 @@ For information purposes we also report separate nDCG@10 and HR@10 for each targ
 The training and validation as well as the test run can be downloaded [here](#).
 The data is structured as follows:
 
-<code>
-	&nbsp;data<br>&nbsp;&nbsp;
-	&#x251C;&#x2500;&#x2500; s1<br>&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [3.2M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* train data */<br>&nbsp;&nbsp;
-	&#x251C;&#x2500;&#x2500; s2<br>&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [2.0M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* train data */<br>&nbsp;&nbsp;
-	&#x251C;&#x2500;&#x2500; s3<br>&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1006K]&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* train data */<br>&nbsp;&nbsp;
-	&#x251C;&#x2500;&#x2500; t1<br>&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [5.9M]&nbsp;&nbsp;test_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* list of test items to be reranked */<br>&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [1.7M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* train data */<br>&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [236K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;/* validation positive samples */<br>&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [5.9M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;/* list of validation items to be reranked */<br>&nbsp;&nbsp;
-	&#x2514;&#x2500;&#x2500; t2<br>&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp; &#x251C;&#x2500;&#x2500; [2.9M]&nbsp;&nbsp;test_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* list of test items to be reranked */<br>&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp; &#x251C;&#x2500;&#x2500; [845K]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* train data */<br>&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp; &#x251C;&#x2500;&#x2500; [116K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;/* validation positive samples */<br>&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp; &#x2514;&#x2500;&#x2500; [2.9M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;/* list of validation items to be reranked */<br>&nbsp;&nbsp;
-	<br>&nbsp;&nbsp;<br>
-</code>
+
+&nbsp;data<br>&nbsp;&nbsp;
+&#x251C;&#x2500;&#x2500; s1<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [3.2M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&#x251C;&#x2500;&#x2500; s2<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [2.0M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&#x251C;&#x2500;&#x2500; s3<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1006K]&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&#x251C;&#x2500;&#x2500; t1<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [5.9M]&nbsp;&nbsp;test_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of test items to be reranked \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [1.7M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [236K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [5.9M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
+&#x2514;&#x2500;&#x2500; t2<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &#x251C;&#x2500;&#x2500; [2.9M]&nbsp;&nbsp;test_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of test items to be reranked \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &#x251C;&#x2500;&#x2500; [845K]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &#x251C;&#x2500;&#x2500; [116K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &#x2514;&#x2500;&#x2500; [2.9M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
+<br>&nbsp;&nbsp;<br>
+
 
 - There are three folders 
         *```s1```*,
