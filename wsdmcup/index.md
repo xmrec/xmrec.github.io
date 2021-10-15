@@ -1,4 +1,4 @@
-# XMRec: Cross-Market Recommendation Competition @ WSDM 2022
+# WSDM Cup on Cross-Market Recommendation Competition
 
 ## Overview
 E-commerce companies often operate across markets; for instance [Amazon](https://www.amazon.com)
