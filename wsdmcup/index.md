@@ -8,6 +8,7 @@ The key challenge, however, is that data, such as user interaction data with pro
 Therefore, the algorithms trained on a source market are not necessarily effective in a different target market.
 Despite its significance, small progress has been made in cross-market recommendation, mainly due to a lack of experimental data for the researchers. In this WSDM Cup challenge, we provide user purchase and rating data on various markets, enriched with review data in different languages, with a considerable number of shared item subsets. The goal is to improve individual recommendation systems in these target markets by leveraging data from similar auxiliary markets.
 
+To participate register to [Codalab](https://codalab.org/) and join our task (coming soon).
 
 ## Task
 ### Problem Definition
@@ -192,13 +193,31 @@ Notice that we ask the top teams to provide the code to their models to run them
 
 At the end of the challenge, each team is encouraged to open source the source code that was used to generate their final challenge solution under the MIT license. To be eligible for the leaderboard or prizes, winning teams are also required to submit papers describing their method to the WSDM Cup Workshop, and present their work at the workshop. Refer to the "Call for Papers" section on the WSDM Cup 2022 webpage for more details.
 
+## Timeline
+
+- October 18, 2021: Online registration is open. **Training** and **Validation** dataset released.
+- December 20, 2021: Deadline for online registration.
+- January 17, 2022: Deadline for results **submission**.
+- February 1, 2022: **Announcement** of results.
+- February 7, 2022: Deadline for supporting materials (codes, ...)
+- February 14, 2022: Deadline for documents.
+- February 21, 2022: Award and Presentation from the top 3 teams
+ 
+
+## Prizes:  
+
+- 1st-place: One team ($2000) 
+
+- 2nd-place: One team ($100) 
+
+- 3rd-place: One team ($500)
+
 ## Organizers
  - [Mohammad Aliannejadi](http://aliannejadi.com), University of Amsterdam, The Netherlands
  - [Hamed Bonab](https://people.cs.umass.edu/~bonab/), University of Massachusetts Amherst, USA
  - Ali Vardasbi, University of Amsterdam, The Netherlands
  - [Evangelos Kanoulas](https://staff.fnwi.uva.nl/e.kanoulas/), University of Amsterdam, The Netherlands
  - [James Allan](http://ciir.cs.umass.edu/~allan/), University of Massachusetts Amherst, USA
- - [Vanessa Murdock](https://www.amazon.science/author/vanessa-murdock), Amazon Inc., USA
 
 ## Contact
 For queries, please contact us via [m.aliannejadi@uva.nl](mailto:m.aliannejadi@uva.nl).
