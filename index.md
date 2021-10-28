@@ -16,7 +16,7 @@ If you use our dataset, please refer to this paper:
 ```
 @inproceedings{bonab2021crossmarket,
 	author = {Bonab, Hamed and Aliannejadi, Mohammad and Vardasbi, Ali and Kanoulas, Evangelos and Allan, James},
-	booktitle = {Proceedings of the 29th ACM International Conference on Information \& Knowledge Management},
+	booktitle = {Proceedings of the 30th ACM International Conference on Information \& Knowledge Management},
 	publisher = {ACM},
 	title = {Cross-Market Product Recommendation},
 	year = {2021}}
