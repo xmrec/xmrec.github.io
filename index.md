@@ -15,7 +15,7 @@
 ### Files
 
 ### Citation
-If you use our dataset, please refer to this paper:
+If you use this dataset, please refer to our paper:
 ```
 @inproceedings{bonab2021crossmarket,
 	author = {Bonab, Hamed and Aliannejadi, Mohammad and Vardasbi, Ali and Kanoulas, Evangelos and Allan, James},
