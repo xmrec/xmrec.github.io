@@ -220,5 +220,7 @@ At the end of the challenge, each team is encouraged to open source the source c
  - [James Allan](http://ciir.cs.umass.edu/~allan/), University of Massachusetts Amherst, USA
 
 ## Contact
+Please follow our announcements from [twitter](https://twitter.com/XMarketRec) and [google groups](https://groups.google.com/u/1/g/xmrec).
+
 For queries, please contact us via [m.aliannejadi@uva.nl](mailto:m.aliannejadi@uva.nl).
 
