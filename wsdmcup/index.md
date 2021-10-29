@@ -187,7 +187,7 @@ The XMRec WSDM Cup looks for a wide range of financial supports, ranging from th
         
 ## Terms and Conditions
 The XMRec dataset is free to download for research purposes.
-Each team is allowed to submit one run per day and a maximum of 100 runs in total.
+Each team is allowed to submit two runs per day and a maximum of 100 runs in total.
 
 Notice that we ask the top teams to provide the code to their models to run them locally after the end of the competition.
 
