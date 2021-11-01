@@ -6,7 +6,7 @@ has expanded their operations and sales to 18 markets (i.e. countries) around th
 The cross-market recommendation concerns the problem of recommending relevant products to users in a target market (e.g., a resource-scarce market) by leveraging data from similar high-resource markets, e.g. using data from the U.S. market to improve recommendations in a target market. 
 The key challenge, however, is that data, such as user interaction data with products (clicks, purchases, reviews), convey certain biases of the individual markets. 
 Therefore, the algorithms trained on a source market are not necessarily effective in a different target market.
-Despite its significance, small progress has been made in cross-market recommendation, mainly due to a lack of experimental data for the researchers. In this WSDM Cup challenge, we provide user purchase and rating data on various markets, enriched with review data in different languages, with a considerable number of shared item subsets. The goal is to improve individual recommendation systems in these target markets by leveraging data from similar auxiliary markets.
+Despite its significance, small progress has been made in cross-market recommendation, mainly due to a lack of experimental data for the researchers. In this WSDM Cup challenge, we provide user purchase and rating data on various markets with a considerable number of shared item subsets. The goal is to improve individual recommendation systems in these target markets by leveraging data from similar auxiliary markets.
 
 To participate register to [Codalab](https://competitions.codalab.org/competitions/36050) and join our task.
 
@@ -14,7 +14,7 @@ To participate register to [Codalab](https://competitions.codalab.org/competitio
 ### Problem Definition
 
 Given a global set of items I, 
-we define a market M as the collection of its users U(M) together with their interactions (i.e. ratings and reviews) with items from I.
+we define a market M as the collection of its users U(M) together with their interactions (i.e. ratings) with items from I.
 Generally, a user can interact with different markets, but for simplicity, we assume that the set of users in each market are mutually disjoint with any other parallel market.
 In this competition, we have three source markets, s1, s2, and s3, and two target markets, t1 and t2. 
 
