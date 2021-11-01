@@ -56,11 +56,20 @@ This is how your zip file should look like:
 &nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; test_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* scores of test items \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; valid_scores.tsv&nbsp;&nbsp;&nbsp;&nbsp;/\* scores of validation items \*/<br>&nbsp;&nbsp;
 
-
+We provide a validation script ```validate_submission.py``` that can be used to check your zip file before submission.
+Simply run
+```python
+validate_submission.py path/to/submission.zip
+```
+on your final zip file to make sure the structure of your submission is OK.
+If so you will get the following message:
+```python
+File structure validation successfully passed
+```
 ## Evaluation
 
 We evaluate the submissions based on their average nDCG@10.
-As discussed in submission guidlines, the scores of items are sorted for each user and the top 10 items are considered for evaluation.
+As discussed in submission guidelines, the scores of items are sorted for each user and the top 10 items are considered for evaluation.
 For the total evaluation, we concatenate the users of the target markets (*```t1/scores.tsv```* and *```t2/scores.tsv```*) and compute the nDCG@10 on the resulting list. The teams are ranked based on this metric.
 <br>
 For information purposes we also report separate nDCG@10 and HR@10 for each target market, too.
