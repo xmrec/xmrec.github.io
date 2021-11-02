@@ -10,6 +10,10 @@ Despite its significance, small progress has been made in cross-market recommend
 
 To participate register to [Codalab](https://competitions.codalab.org/competitions/36050) and join our task.
 
+<iframe src="https://competitions.codalab.org/competitions/submission_widget/36050/" style="height: 500px; width: 100%; border: none;"></iframe>
+
+<iframe src="https://competitions.codalab.org/competitions/leaderboard_widget/36050/" style="height: 500px; width: 100%; border: none;"></iframe>
+
 ## Task
 ### Problem Definition
 
