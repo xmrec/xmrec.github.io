@@ -7,7 +7,7 @@ description: WSDM 2022
 
 google_analytics: UA-206094552-1
 
-markdown: GFM
+markdown: kramdown
 
 plugins:
 - jekyll-menus
