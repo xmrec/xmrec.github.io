@@ -77,7 +77,7 @@ For the total evaluation, we concatenate the users of the target markets (*```t1
 For information purposes we also report separate nDCG@10 and HR@10 for each target market, too.
 
 ## Data
-The training and validation as well as the test run can be downloaded [here](#).
+The training and validation as well as the test run are provided in the [starter kit repository](https://github.com/hamedrab/wsdm22_cup_xmrec).
 The data is structured as follows:
 
 
