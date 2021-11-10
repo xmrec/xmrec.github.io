@@ -82,27 +82,22 @@ For information purposes we also report separate nDCG@10 and HR@10 for each targ
 The training and validation as well as the test run are provided in the [starter kit repository](https://github.com/hamedrab/wsdm22_cup_xmrec).
 The data is structured as follows:
 
-
-
 &nbsp;DATA<br>&nbsp;&nbsp;
 &#x251C;&#x2500;&#x2500; s1<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1.8M]&nbsp;&nbsp;train_5core.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [19.2M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [139K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [5.6M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
-
 &#x251C;&#x2500;&#x2500; s2<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1.1M]&nbsp;&nbsp;train_5core.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [2.6M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [153K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [6.2M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
-
 &#x251C;&#x2500;&#x2500; s3<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [548K]&nbsp;&nbsp;train_5core.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1.2M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [71K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [2.9M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
-
 &#x251C;&#x2500;&#x2500; t1<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [2.3M]&nbsp;&nbsp;test_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of test items to be reranked \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [1.4M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
