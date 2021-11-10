@@ -84,37 +84,37 @@ The data is structured as follows:
 
 
 
-&nbsp;data<br>&nbsp;&nbsp;
+&nbsp;DATA<br>&nbsp;&nbsp;
 &#x251C;&#x2500;&#x2500; s1<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1.8M]&nbsp;&nbsp;train_5core.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [3.2M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [19.2M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [139K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [5.6M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
 
-&nbsp;data<br>&nbsp;&nbsp;
 &#x251C;&#x2500;&#x2500; s2<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1.8M]&nbsp;&nbsp;train_5core.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [3.2M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [139K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [5.6M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1.1M]&nbsp;&nbsp;train_5core.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [2.6M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [153K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [6.2M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
 
-&nbsp;data<br>&nbsp;&nbsp;
 &#x251C;&#x2500;&#x2500; s3<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1.8M]&nbsp;&nbsp;train_5core.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [3.2M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [139K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [5.6M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [548K]&nbsp;&nbsp;train_5core.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1.2M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [71K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [2.9M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
 
 &#x251C;&#x2500;&#x2500; t1<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [5.9M]&nbsp;&nbsp;test_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of test items to be reranked \*/<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [1.7M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [236K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [5.9M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [2.3M]&nbsp;&nbsp;test_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of test items to be reranked \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [1.4M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [457K]&nbsp;&nbsp;train_5core.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [58K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [2.3M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
 &#x2514;&#x2500;&#x2500; t2<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp; &#x251C;&#x2500;&#x2500; [2.9M]&nbsp;&nbsp;test_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of test items to be reranked \*/<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp; &#x251C;&#x2500;&#x2500; [845K]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp; &#x251C;&#x2500;&#x2500; [116K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp; &#x2514;&#x2500;&#x2500; [2.9M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &#x251C;&#x2500;&#x2500; [4.8M]&nbsp;&nbsp;test_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of test items to be reranked \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &#x251C;&#x2500;&#x2500; [2.8M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &#x251C;&#x2500;&#x2500; [966K]&nbsp;&nbsp;train_5core.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &#x251C;&#x2500;&#x2500; [118K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &#x2514;&#x2500;&#x2500; [4.8M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
 <br>&nbsp;&nbsp;<br>
 
 
@@ -122,29 +122,29 @@ The data is structured as follows:
         *```s1```*,
         *```s2```*, and 
         *```s3```*;
-        containing the data of the source markets. Inside each, the following file can be found:
-    - *```train.tsv```*: A tab separated file, containing the **Training** data with the following format:
+        containing the data of the source markets. Inside each, the following files can be found:
+    - *```train.tsv```* and *```train_5core.tsv```*: A tab separated file, containing the **Training** data with the following format:
                 ```
                     userId	itemId	rating
                 ```
-                where the first column ```userId``` is the user unique id, the second column ```itemId``` is the item unique id, and the third column ```rating``` is the rating (an integer ranging from 1 to 5).
-                This means that our training data only contains the **positive** samples. All the other (user, item) pairs are unknown and can be considered **negative** during training.
+                where the first column ```userId``` is the user unique id, the second column ```itemId``` is the item unique id, and the third column ```rating``` is the rating (an integer ranging from 1 to 5). We conduct some pre-processing steps and provide 5core versions for training data for further facilitate the data preprocessing burden. For this step, we first normalize ratings into 0 and 1 and filtered users with 5 ratings, and items with 5 ratings from their corresponding train.tsv file. Note that you might see some descripincies between these training files. It is due to a few other steps that is related to our data generation and we are not able to reveal those. 
+                This means that our 5core training data only contains the **positive** samples. All the other (user, item) pairs are unknown and can be considered **negative** during training. We provide valid_qrel.tsv and valid_run.tsv for source markets for any solution that might need evalutions on source markets. 
 
 - There are two folders
         *```t1```*, and 
         *```t2```*; containing the data of the target markets. Inside each, the following files can be found:
-    - *```train.tsv```*: 
-                A tab separated file, containing the **Training** data with ```userId```, ```itemId```, and ```rating``` fields the same as above.
+    - *```train.tsv```* and *```train_5core.tsv```*: 
+                Similar to source markets, provide tab separated files, containing the **Training** data with ```userId```, ```itemId```, and ```rating``` fields.
     - *```valid_qrel.tsv```*:
                 The **Validation positive** samples, with a structure similar to the *```train.tsv```*.
                 Note that the validation set only has one positive sample per user.
-    - *```valid_qrun.tsv```*:
+    - *```valid_run.tsv```*:
                 The **Validation** samples. For consistency of results between different teams, we provide you 99 negative samples for each unique ```userId``` as follows:
                 ```
                     userId	itemId1,itemId2,...,itemId100
                 ```
                 where the two columns are separated by a tab and the list of items are separated by commas. There are 99 negative samples and 1 positive sample (identified in the *```valid_qrel.tsv```* file) in the list. Your model should rerank these 100 items per user.
-    - *```test_qrun.tsv```*:
+    - *```test_run.tsv```*:
                 The **Test candidate** samples. As is common in recommendation systems, we provide you 100 candidate items for each unique ```userId``` as follows:
                 ```
                     userId	itemId1,itemId2,...,itemId100
