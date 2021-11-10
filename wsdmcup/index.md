@@ -12,6 +12,8 @@ To participate register to [Codalab](https://competitions.codalab.org/competitio
 
 [Leader Board](https://xmrec.github.io/leaderboard/)
 
+[Starter kit repository](https://github.com/hamedrab/wsdm22_cup_xmrec)
+
 ## Task
 ### Problem Definition
 
@@ -81,13 +83,28 @@ The training and validation as well as the test run are provided in the [starter
 The data is structured as follows:
 
 
+
 &nbsp;data<br>&nbsp;&nbsp;
 &#x251C;&#x2500;&#x2500; s1<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [3.2M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1.8M]&nbsp;&nbsp;train_5core.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [3.2M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [139K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [5.6M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
+
+&nbsp;data<br>&nbsp;&nbsp;
 &#x251C;&#x2500;&#x2500; s2<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [2.0M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1.8M]&nbsp;&nbsp;train_5core.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [3.2M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [139K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [5.6M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
+
+&nbsp;data<br>&nbsp;&nbsp;
 &#x251C;&#x2500;&#x2500; s3<br>&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1006K]&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [1.8M]&nbsp;&nbsp;train_5core.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [3.2M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* full train data \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [139K]&nbsp;&nbsp;valid_qrel.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* validation positive samples \*/<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&#x2514;&#x2500;&#x2500; [5.6M]&nbsp;&nbsp;valid_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of validation items to be reranked \*/<br>&nbsp;&nbsp;
+
 &#x251C;&#x2500;&#x2500; t1<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [5.9M]&nbsp;&nbsp;test_run.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* list of test items to be reranked \*/<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&#x251C;&#x2500;&#x2500; [1.7M]&nbsp;&nbsp;train.tsv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* train data \*/<br>&nbsp;&nbsp;
