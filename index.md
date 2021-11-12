@@ -41,11 +41,125 @@ Below is the list of our markets and their data. For every market below, you can
 ### Data Samples (and python reading code examples)
 
 
+1. ** Ratings **
+Provide a simple file format listing as `userId itemId rating date`. For this purpose, you can easily read each of these ratings with the following code. 
+
+
 ```python
 import pandas as pd
-cur_ratings = ‘ratings_uk_Books.txt.gz’ # specify the url to the file 
+cur_ratings = 'ratings_uk_Books.txt.gz' # specify the url to the file 
 df = pd.read_csv(cur_ratings, compression='gzip', header=None, sep=' ', quotechar='"', names=["userId", "itemId", "rate", "date"] )
 ```
+
+After reading, you can see a dataframe similar to below (taken from uk market). 
+
++------------------------------+------------+--------+------------+
+| userId                       |     itemId |   rate | date       |
+|------------------------------+------------+--------+------------|
+| AFXKARXBL3X3LO5GNN4XAXC7XMPQ | 0061806765 |      3 | 2012-08-20 |
+| AH3Z5FFVAQYVQNDBUG2M23ZZBCGA | 0007273754 |      5 | 2013-11-24 |
+| AHDFCI7XXY5J7GIDWWE2VSLPQMCQ | 1682307530 |      4 | 2016-06-29 |
+| AE5KNHUMUIHXU3FCRBDMTTZT7UYA | 1611097843 |      5 | 2014-05-29 |
+| AEEHVF74E2QB7UP7VG4LFSUNXVJA | 0142410586 |      4 | 2020-04-13 |
++------------------------------+------------+--------+------------+
+
+where
+- userId - ID of the reviewer  
+- itemId - asin or the ID of the product, e.g. [B014RDFCFI](https://www.amazon.co.uk/dp/B014RDFCFI) 
+- rate - rating of the product in the range of 1-5 
+- date - date of the review in the format of YYYY-MM-DD
+
+
+2. ** Reviews **
+Review files provide a list of json objects, each providing a customer review for a given product. For reading these files you can read line by line and obtain the json dictionary of a specific review as below. 
+
+```python
+import gzip
+example_rev_file = 'reviews_uk_Books.json.gz'
+review_lines = []
+with gzip.open(example_rev_file, 'rt', encoding='utf8') as f:
+    review_lines = f.readlines()
+    
+print( eval(review_lines[1].strip())[0] )
+```
+Below is the output of the sample line of the review file we read above. 
+
+```json
+{
+'reviewerID': 'AGIBLPPKMJ7NUQ2MCD3RW2OQXUAQ',
+ 'asin': '0001047868',
+ 'reviewerName': 'christine mcgill',
+ 'reviewText': 'I thourghly enjoyed this classic, read it when I was ten so was greatly surprised that it seemed even better than I remembered.',
+ 'overall': 5.0,
+ 'summary': 'I thourghly enjoyed this classic',
+ 'cleanReviewTime': '2015-09-29',
+ 'reviewTime': '29 September 2015'
+}
+```
+where
+- reviewerID - ID of the reviewer equivalent to userId of ratings 
+- asin - ID of the product equivalent to the itemId of ratings, e.g. [B014RDFCFI](https://www.amazon.co.uk/dp/B014RDFCFI)  
+- reviewerName - name of the reviewer
+- reviewText - text of the review
+- overall - rating of the product in the range of 1-5 
+- summary - summary of the review
+- cleanReviewTime - date of the review in the format of YYYY-MM-DD
+- reviewTime - original review time posted along with the review in the local market calendar
+
+
+3. ** Metadata **
+Metadata includes product descriptions, price, sales-rank, brand info, and co-purchasing links.  
+
+```python
+import gzip
+example_met_file = 'DATA_1/uk/Books/metadata_uk_Books.json.gz'
+meta_lines = []
+with gzip.open(example_met_file, 'rt', encoding='utf8') as f:
+    meta_lines = f.readlines()
+
+print( eval(meta_lines[0].strip()) )
+```
+
+
+```json
+ {
+ 'asin': '0001050230',
+ 'title': 'Love’s Labours Lost: Performed by Derek Jacobi, Geraldine McEwan & Cast',
+ 'averageRating': '4.1',
+ 'ratingCount': '27 global ratings',
+ 'amazon_badge': '',
+ 'ratingDist': {'5': '59%', '4': '12%', '3': '14%', '2': '9%', '1': '6%'},
+ 'ratingByFeature': {},
+ 'price': '',
+ 'imgUrl': [],
+ 'related': {'sponsored': [],
+  'alsoBought': ['1903436958', '0199536813',  '1904271014',  '1903436850', '1903436257', '9389193397'],
+  'alsoViewed': ['0199536813',  '1903436958', '1853260304',  '1903436990',  '0199535906',  '1903436214',  '0199535914',  '0141396431',  '0198328729',  '1904271081', '9389193397', '147257754X'],
+  'boughtTogether': [],
+  'compared': []},
+ 'productDetails': {},
+ 'sellerPage': '',
+ 'categories': ['Fiction', 'Classics'],
+ 'description': '',
+ 'overviewFeatures': {},
+ 'features': [],
+ 'reviewFilters': []
+ }
+```
+
+Where
+
+- asin - ID of the product, e.g. 0000031852
+- title - name of the product
+- price - price in US dollars (at time of crawl)
+- imUrl - url of the product image
+- related - related products (also bought, also viewed, bought together, buy after viewing)
+- salesRank - sales rank information
+- brand - brand name
+- categories - list of categories the product belongs to
+
+
+
 
 
 
