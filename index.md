@@ -42,13 +42,15 @@ Below is the list of our markets and their data. For every market below, you can
 
 
 1. **Ratings**
+
+
 Provide a simple file format listing as `userId itemId rating date`. For this purpose, you can easily read each of these ratings with the following code. 
 
 
 ```python
 import pandas as pd
 cur_ratings = 'ratings_uk_Books.txt.gz' # specify the url to the file 
-df = pd.read_csv(cur_ratings, compression='gzip', header=None, sep=' ', quotechar='"', names=["userId", "itemId", "rate", "date"] )
+df = pd.read_csv(cur_ratings, compression='gzip', header=None, sep=' ', names=["userId", "itemId", "rate", "date"] )
 ```
 
 After reading, you can see a dataframe similar to below (taken from uk market). 
@@ -73,6 +75,8 @@ where
 
 
 2. **Reviews**
+
+
 Review files provide a list of json objects, each providing a customer review for a given product. For reading these files you can read line by line and obtain the json dictionary of a specific review as below. 
 
 ```python
@@ -84,6 +88,7 @@ with gzip.open(example_rev_file, 'rt', encoding='utf8') as f:
     
 print( eval(review_lines[1].strip())[0] )
 ```
+
 Below is the output of the sample line of the review file we read above. 
 
 ```
@@ -110,11 +115,13 @@ where
 
 
 3. **Metadata**
-Metadata includes product descriptions, price, sales-rank, brand info, and co-purchasing links.  
+
+
+Metadata includes product descriptions, price, sales-rank, brand info, and co-purchasing links. For reading, similar to reviews, use the below python code snippet.   
 
 ```python
 import gzip
-example_met_file = 'DATA_1/uk/Books/metadata_uk_Books.json.gz'
+example_met_file = 'metadata_uk_Books.json.gz'
 meta_lines = []
 with gzip.open(example_met_file, 'rt', encoding='utf8') as f:
     meta_lines = f.readlines()
@@ -122,6 +129,7 @@ with gzip.open(example_met_file, 'rt', encoding='utf8') as f:
 print( eval(meta_lines[0].strip()) )
 ```
 
+Below is the output of the sample line of the review file we read above. 
 
 ```
  {
@@ -153,13 +161,13 @@ Where
 
 - asin - ID of the product, e.g. 0000031852
 - title - name of the product
-- price - price in US dollars (at time of crawl)
-- imUrl - url of the product image
+- averageRating - the average rate of the product in the time of obtaining the data, float number \[1-5\]
+- ratingCount - how many users rate this product
+- amazon_badge - ?
+- ratingDist - the distribution of each rating value 
 - related - related products (also bought, also viewed, bought together, buy after viewing)
-- salesRank - sales rank information
 - brand - brand name
 - categories - list of categories the product belongs to
-
 
 
 
