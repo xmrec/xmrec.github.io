@@ -38,6 +38,17 @@ Below is the list of our markets and their data. For every market below, you can
 - [United States (us)](https://xmrec.github.io/data/us)
 
 
+### Data Samples (and python reading code examples)
+
+
+```python
+import pandas as pd
+cur_ratings = ‘ratings_uk_Books.txt.gz’ # specify the url to the file 
+df = pd.read_csv(cur_ratings, compression='gzip', header=None, sep=' ', quotechar='"', names=["userId", "itemId", "rate", "date"] )
+```
+
+
+
 ### Citation
 If you use this dataset, please refer to our [CIKM’21 paper](https://arxiv.org/pdf/2109.05929.pdf):
 ```
