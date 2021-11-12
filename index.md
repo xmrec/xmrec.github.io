@@ -13,8 +13,11 @@
 ## XMarket Dataset
 
 ### Description
+Here, we release XMarket, a large dataset covering 18 local markets on 16 different product categories, featuring 52.5 million user-item interactions. For more information on the XMarket dataset, please refer to our [CIKM’21 paper](https://arxiv.org/pdf/2109.05929.pdf). 
 
 ### Files
+Below is the list of our markets and their data. For every market below, you can click and see the list of categories as well as #user, #item, and #ratings we collected. For every market, you can download the `ratings`, `reviews`, and `metadata` associated with asins in this category. Please see below for how to read each type of these files and their file formats. Please reach out if you encounter any problem with these files provided below. The total size of gzipped data is ~7.5 GB.
+
 - [United Arab Emirates (ae)](https://xmrec.github.io/data/ae)
 - [Australia (au)](https://xmrec.github.io/data/au)
 - [Brazil (br)](https://xmrec.github.io/data/br)
@@ -33,8 +36,10 @@
 - [Turkey (tr)](https://xmrec.github.io/data/tr)
 - [United Kingdom (uk)](https://xmrec.github.io/data/uk)
 - [United States (us)](https://xmrec.github.io/data/us)
+
+
 ### Citation
-If you use this dataset, please refer to our paper:
+If you use this dataset, please refer to our [CIKM’21 paper](https://arxiv.org/pdf/2109.05929.pdf):
 ```
 @inproceedings{bonab2021crossmarket,
 	author = {Bonab, Hamed and Aliannejadi, Mohammad and Vardasbi, Ali and Kanoulas, Evangelos and Allan, James},
@@ -43,6 +48,6 @@ If you use this dataset, please refer to our paper:
 	title = {Cross-Market Product Recommendation},
 	year = {2021}}
 ```
-[pdf](https://arxiv.org/pdf/2109.05929.pdf)
+
 
 ### Code
