@@ -121,54 +121,71 @@ Metadata includes product descriptions, price, sales-rank, brand info, and co-pu
 
 ```python
 import gzip
-example_met_file = 'metadata_uk_Books.json.gz'
+example_met_file = 'metadata_us_Electronics.json.gz'
 meta_lines = []
 with gzip.open(example_met_file, 'rt', encoding='utf8') as f:
     meta_lines = f.readlines()
 
-print( eval(meta_lines[0].strip()) )
+print( eval(meta_lines[80].strip()) )
 ```
 
 Below is the output of the sample line of the review file we read above. 
 
 ```
- {
- 'asin': '0001050230',
- 'title': 'Love’s Labours Lost: Performed by Derek Jacobi, Geraldine McEwan & Cast',
- 'averageRating': '4.1',
- 'ratingCount': '27 global ratings',
- 'amazon_badge': '',
- 'ratingDist': {'5': '59%', '4': '12%', '3': '14%', '2': '9%', '1': '6%'},
+ {'asin': 'B000023VW2',
+ 'title': 'Sangean ANT-60 Short Wave Antenna',
+ 'averageRating': '4.3',
+ 'ratingCount': '698 global ratings',
+ 'amazon_badge': 'Amazon\'s \nChoice for "shortwave antenna"',
+ 'ratingDist': {'5': '67%', '4': '14%', '3': '10%', '2': '3%', '1': '6%'},
  'ratingByFeature': {},
- 'price': '',
- 'imgUrl': [],
- 'related': {'sponsored': [],
-  'alsoBought': ['1903436958', '0199536813',  '1904271014',  '1903436850', '1903436257', '9389193397'],
-  'alsoViewed': ['0199536813',  '1903436958', '1853260304',  '1903436990',  '0199535906',  '1903436214',  '0199535914',  '0141396431',  '0198328729',  '1904271081', '9389193397', '147257754X'],
-  'boughtTogether': [],
-  'compared': []},
- 'productDetails': {},
- 'sellerPage': '',
- 'categories': ['Fiction', 'Classics'],
- 'description': '',
- 'overviewFeatures': {},
- 'features': [],
- 'reviewFilters': []
- }
+ 'price': '$12.86',
+ 'imgUrl': '{"https://images-na.ssl-images-amazon.com/images/I/71-XmouTyhL._AC_SX569_.jpg":[369,569],"https://images-na.ssl-images-amazon.com/images/I/71-XmouTyhL._AC_SX355_.jpg":[230,355],"https://images-na.ssl-images-amazon.com/images/I/71-XmouTyhL._AC_SX425_.jpg":[276,425],"https://images-na.ssl-images-amazon.com/images/I/71-XmouTyhL._AC_SX450_.jpg":[292,450],"https://images-na.ssl-images-amazon.com/images/I/71-XmouTyhL._AC_SX466_.jpg":[303,466],"https://images-na.ssl-images-amazon.com/images/I/71-XmouTyhL._AC_SX522_.jpg":[339,522],"https://images-na.ssl-images-amazon.com/images/I/71-XmouTyhL._AC_SX679_.jpg":[441,679]}',
+ 'related': {
+	 'sponsored': ['B000NOSCN0', 'B07NRSWB6Q', 'B00008N9M7', 'B0823N6DWV', 'B07NRNVCTV', 'B00QXJMZRS', 'B07SXF87LJ', 'B07P8BW3P2', 'B07YN62TM1', 'B07CNMDTY8', 'B000NOSCN0', 'B00R6VXD6Y', 'B074QLLVC6', 'B00008N9M7', 'B00QXJMZRS', 'B07R284TN5','B01N3POQ92', 'B07P8BW3P2', 'B07R3QG1CR','B000O8SQNG'],
+	  'alsoBought': [],
+	  'alsoViewed': ['B0104MT5HW', 'B00GJ51NVA', 'B08464KCG1', 'B0055Q5FIQ', 'B082B4C7CC', 'B001KC579Q', 'B0141X3B5W', 'B00IDM4N5K', 'B07T6LK1X2', 'B004H912FC', 'B08HCYYW88', 'B07T2FQH6N', 'B0104J57GS', 'B0014T7W8Y', 'B001HX4D84', 'B004QJKO52', 'B01ARN28SQ', 'B07T1F6LDY', '1999830024', 'B00X15M5MC', 'B08BLF7QDV', 'B005OEA88Q', 'B0035X1EC2', 'B01MSMRASH', 'B078JKXCYH', 'B085ZSXF8Z', 'B009ENG6TI','B00BLW627G', 'B001P4LTAU'],
+	  'boughtTogether': ['B000023VW2', 'B005KVJYTW', 'B004H912FC'],
+	  'compared': ['B000023VW2', 'B01I27ZOQM','B082B4C7CC', 'B001PNNXGO', 'B001KC579Q', 'B0055Q5FIQ']
+  },
+ 'productDetails': {
+      'Product Dimensions': '5.98 x 8.27 x 0.94 inches',
+      'Item Weight': '1.41 ounces',
+      'Manufacturer': 'Sangean',
+      'ASIN': 'B000023VW2',
+      'Item model number': 'ANT-60',
+      'Customer Reviews': ['/*',
+	   '* Fix for UDP-1061. Average customer reviews has a small extra line on hover',
+	   '* https://omni-grok.amazon.com/xref/src/appgroup/websiteTemplates/retail/SoftlinesDetailPageAssets/udp-intl-lock/src/legacy.css?indexName=WebsiteTemplates#40'],
+  	'Best Sellers Rank': '#13 in Radio Antennas',
+  	'Is Discontinued By Manufacturer': 'No',
+  	'Date First Available': 'October 15, 1999'},
+	 'sellerPage': '/stores/SANGEAN/page/E550CD6C-93E0-447F-B3F0-A06E71DF322F?ref_=ast_bln',
+	 'categories': ['Electronics',
+	  'Accessories & Supplies',
+	  'Audio & Video Accessories',
+	  'Antennas',
+	  'Radio Antennas'],
+ 	'description': "From the Manufacturer\nShortwave radios brought the world together long before the Internet, and now the Sangean ANT-60 antenna helps maximize your shortwave experience. Ideally suited for today's compact shortwave receiver and fully portable inside its convenient, compact carrying case, the ANT-60 extends to a full 23 feet and enhances the performance and reception of your shortwave radio beyond that of a typical built-in telescoping antenna. An adapter plug is provided for those receivers lacking a standard 1/8-inch (3.5mm) miniplug.",
+ 	'overviewFeatures': {},
+ 	'features': ['Improves the performance and reception of your shortwave radio',
+	  'Extends to 23 feet and can be easily rewound into its compact case',
+	  'Has 3.5-millimeter mini plug',
+	  'Fits any 3.5-millimeter external antenna jack',
+	  'Includes adapter plug'],
+	'reviewFilters': []}
 ```
 
 Where
 
-- asin - ID of the product, e.g. 0000031852
+- asin - ID of the product, e.g. see [B000023VW2](https://www.amazon.com/dp/B000023VW2)
 - title - name of the product
 - averageRating - the average rate of the product in the time of obtaining the data, float number \[1-5\]
 - ratingCount - how many users rate this product
-- amazon_badge - ?
+- amazon_badge - if there is any badge associated with this product
 - ratingDist - the distribution of each rating value 
-- related - related products (also bought, also viewed, bought together, buy after viewing)
-- brand - brand name
-- categories - list of categories the product belongs to
-
+- related - related products (also bought, also viewed, bought together, compared, and sponsored) are listed
+- productDetails - a variety of information related to the product, including brand, category, descriptions, features, etc. are all provided in this dictionary. See the product page for further information on each of these fields provided with our data. 
 
 
 
@@ -186,3 +203,4 @@ If you use this dataset, please refer to our [CIKM’21 paper](https://arxiv.org
 
 
 ### Code
+FOREC's data cleaning and code are comming soon... 
