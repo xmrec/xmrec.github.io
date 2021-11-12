@@ -1,14 +1,16 @@
-# XMarket: Cross-Market Recommendation
+# Cross-Market Recommendation (XMRec)
 
 ## Events
 
-<span style="color:red">* News! * </span>
+<span style="color:red">* Ongoing! * </span>
 **[Cross-Market Recommendation Competition @ WSDM 2022](https://xmrec.github.io//wsdmcup)**
+
+**[Cross-Market Product Recommendation @ CIKM 2021](https://dl.acm.org/doi/abs/10.1145/3459637.3482493)**
 
 **[Workshop of Cross-Market Recommendation @ RecSys 2021](https://xmrec.github.io//recsys)**
 
 
-## Dataset
+## XMarket Dataset
 
 ### Description
 
