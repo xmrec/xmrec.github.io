@@ -41,7 +41,7 @@ Below is the list of our markets and their data. For every market below, you can
 ### Data Samples (and python reading code examples)
 
 
-1. ** Ratings **
+1. **Ratings**
 Provide a simple file format listing as `userId itemId rating date`. For this purpose, you can easily read each of these ratings with the following code. 
 
 
@@ -53,6 +53,7 @@ df = pd.read_csv(cur_ratings, compression='gzip', header=None, sep=' ', quotecha
 
 After reading, you can see a dataframe similar to below (taken from uk market). 
 
+```
 +------------------------------+------------+--------+------------+
 | userId                       |     itemId |   rate | date       |
 |------------------------------+------------+--------+------------|
@@ -62,6 +63,7 @@ After reading, you can see a dataframe similar to below (taken from uk market).
 | AE5KNHUMUIHXU3FCRBDMTTZT7UYA | 1611097843 |      5 | 2014-05-29 |
 | AEEHVF74E2QB7UP7VG4LFSUNXVJA | 0142410586 |      4 | 2020-04-13 |
 +------------------------------+------------+--------+------------+
+```
 
 where
 - userId - ID of the reviewer  
@@ -70,7 +72,7 @@ where
 - date - date of the review in the format of YYYY-MM-DD
 
 
-2. ** Reviews **
+2. **Reviews**
 Review files provide a list of json objects, each providing a customer review for a given product. For reading these files you can read line by line and obtain the json dictionary of a specific review as below. 
 
 ```python
@@ -84,7 +86,7 @@ print( eval(review_lines[1].strip())[0] )
 ```
 Below is the output of the sample line of the review file we read above. 
 
-```json
+```
 {
 'reviewerID': 'AGIBLPPKMJ7NUQ2MCD3RW2OQXUAQ',
  'asin': '0001047868',
@@ -107,7 +109,7 @@ where
 - reviewTime - original review time posted along with the review in the local market calendar
 
 
-3. ** Metadata **
+3. **Metadata**
 Metadata includes product descriptions, price, sales-rank, brand info, and co-purchasing links.  
 
 ```python
@@ -121,7 +123,7 @@ print( eval(meta_lines[0].strip()) )
 ```
 
 
-```json
+```
  {
  'asin': '0001050230',
  'title': 'Love’s Labours Lost: Performed by Derek Jacobi, Geraldine McEwan & Cast',
