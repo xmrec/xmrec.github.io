@@ -205,8 +205,14 @@ task_ov, task_ind = get_evaluations_final(valid_run_mf, tgt_valid_qrel)
 You will need to upload the test run output file (.tsv file format) for both target markets to Codalab for our evaluation and leaderboard entry. This output file contains ranked items for each user with their score. Our final evaluation metric is based on nDCG@10 on both target markets.
 
 
+## Sponsors
+Silver sponsors:
+![Spotify](https://xmrec.github.io//wsdmcup//sponsor//Spotify_Logo_RGB_Green.png)
+
+![Google](https://xmrec.github.io//wsdmcup//sponsor//Google_2015_logo.svg)
+
 ## Sponsorship
-The XMRec WSDM Cup looks for a wide range of financial supports, ranging from the support of top teams award to computational power. Please check the [Call for Sponsorship](https://xmrec.github.io//wsdmcup/sponsorship.pdf) for more information.
+The XMRec WSDM Cup looks for a wide range of financial supports, ranging from the support of top teams award to computational power. Please check the [Call for Sponsorship](https://xmrec.github.io//wsdmcup//sponsor//sponsorship.pdf) for more information.
         
 ## Terms and Conditions
 The XMRec dataset is free to download for research purposes.
@@ -227,13 +233,14 @@ At the end of the challenge, each team is encouraged to open source the source c
 - February 21, 2022: Award and Presentation from the top 3 teams
  
 
-## Prizes:  
+## Prizes
 
 - 1st-place: One team ($2000) 
 
 - 2nd-place: One team ($1000) 
 
 - 3rd-place: One team ($500)
+
 
 ## Organizers
  - [Mohammad Aliannejadi](http://aliannejadi.com), University of Amsterdam, The Netherlands
