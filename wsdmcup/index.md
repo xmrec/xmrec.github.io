@@ -209,7 +209,7 @@ You will need to upload the test run output file (.tsv file format) for both tar
 Silver sponsors:
 ![Spotify](https://xmrec.github.io//wsdmcup//sponsor//Spotify_Logo_RGB_Green.png)
 
-![Google](https://xmrec.github.io//wsdmcup//sponsor//Google_2015_logo.svg)
+![Google](https://xmrec.github.io//wsdmcup//sponsor//new-google-logo-png.png)
 
 ## Sponsorship
 The XMRec WSDM Cup looks for a wide range of financial supports, ranging from the support of top teams award to computational power. Please check the [Call for Sponsorship](https://xmrec.github.io//wsdmcup//sponsor//sponsorship.pdf) for more information.
