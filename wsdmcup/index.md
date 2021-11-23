@@ -207,6 +207,8 @@ You will need to upload the test run output file (.tsv file format) for both tar
 
 ## Sponsors
 Silver sponsors:
+<img src="https://xmrec.github.io//wsdmcup//sponsor//Spotify_Logo_RGB_Green.png" width="425" title="Spotify"/> <img src="https://xmrec.github.io//wsdmcup//sponsor//new-google-logo-png.png" width="425" title="Google"/> 
+
 ![Spotify](https://xmrec.github.io//wsdmcup//sponsor//Spotify_Logo_RGB_Green.png "Spotify")  ![Google](https://xmrec.github.io//wsdmcup//sponsor//new-google-logo-png.png "Google")
 
 ## Sponsorship
