@@ -203,4 +203,4 @@ If you use this dataset, please refer to our [CIKM’21 paper](https://arxiv.org
 
 
 ### Code
-FOREC's data cleaning and code are comming soon... 
+FOREC's data cleaning and code are provided in [this repository](https://github.com/hamedrab/FOREC).
