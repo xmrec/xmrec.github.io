@@ -34,7 +34,7 @@ For the target markets, we leave one interaction of each user out for the **Test
 ### Submissions
 
 Your submissions should be a zip file, containing two folders *```t1```* and *```t2```*.
-In each of these two target folders, there should be two tab separated files *```test_scores.tsv```* (the test scores, i.e. reranked items from *```test_run.tsv```*) and *```valid_scores.tsv```* (the validation scores, i.e. reranked items from *```valid_run.tsv```*) with each line containing three columns as follows:
+In each of these two target folders, there should be two tab separated files *```test_pred.tsv```* (the test scores, i.e. reranked items from *```test_run.tsv```*) and *```valid_pred.tsv```* (the validation scores, i.e. reranked items from *```valid_run.tsv```*) with each line containing three columns as follows:
 ```
   userId	itemId	score
 ```
