@@ -8,7 +8,9 @@ The key challenge, however, is that data, such as user interaction data with pro
 Therefore, the algorithms trained on a source market are not necessarily effective in a different target market.
 Despite its significance, small progress has been made in cross-market recommendation, mainly due to a lack of experimental data for the researchers. In this WSDM Cup challenge, we provide user purchase and rating data on various markets with a considerable number of shared item subsets. The goal is to improve individual recommendation systems in these target markets by leveraging data from similar auxiliary markets.
 
-To participate register to [Codalab](https://competitions.codalab.org/competitions/36050) and join our task.
+To participate register to [Codalab](https://competitions.codalab.org/competitions/36050) and and join our task.
+
+***Note:*** All team members should enter their details in the [Team Registration Form](https://bit.ly/3DFc3JR).
 
 [Leader Board](https://xmrec.github.io/leaderboard/)
 
