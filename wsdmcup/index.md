@@ -10,7 +10,7 @@ Despite its significance, small progress has been made in cross-market recommend
 
 To participate register to [Codalab](https://competitions.codalab.org/competitions/36050) and and join our task.
 
-***Note:*** All team members should enter their details in the [Team Registration Form](https://bit.ly/3DFc3JR).
+<span style="color:red"> ***Note:*** </span> All team members should enter their details in the [Team Registration Form](https://bit.ly/3DFc3JR).
 
 [Leader Board](https://xmrec.github.io/leaderboard/)
 
