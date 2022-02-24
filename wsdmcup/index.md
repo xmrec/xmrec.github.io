@@ -8,13 +8,21 @@ The key challenge, however, is that data, such as user interaction data with pro
 Therefore, the algorithms trained on a source market are not necessarily effective in a different target market.
 Despite its significance, small progress has been made in cross-market recommendation, mainly due to a lack of experimental data for the researchers. In this WSDM Cup challenge, we provide user purchase and rating data on various markets with a considerable number of shared item subsets. The goal is to improve individual recommendation systems in these target markets by leveraging data from similar auxiliary markets.
 
-To participate register to [Codalab](https://competitions.codalab.org/competitions/36050) and and join our task.
 
-<span style="color:red"> ***Note:*** </span> All team members should enter their details in the [Team Registration Form](https://bit.ly/3DFc3JR).
-
-[Leader Board](https://xmrec.github.io/leaderboard/)
+The competition was held on [Codalab](https://competitions.codalab.org/competitions/36050).
 
 [Starter kit repository](https://github.com/hamedrab/wsdm22_cup_xmrec)
+
+## Leaderboard
+
+
+|#|Corresponding user|Team|T1+T2 nDCG@10|T1+T2 HR@10|T1 nDCG@10|T2 nDCG@10|
+|--- |--- |--- |--- |--- |--- |--- |
+|1|Zhang Qi|young_simple|0.6773 (1)|0.7869 (1)|0.7384 (3)|0.6472 (1)|
+|2|Zeyuan Chen|fish_|0.6765 (2)|0.7860 (2)|0.7393 (2)|0.6457 (2)|
+|3|Peng Zhang|biubiubiu|0.6746 (3)|0.7800 (4)|0.7395 (1)|0.6427 (4)|
+|4|Cesare Bernardis|G13Destroyer|0.6735 (4)|0.7841 (3)|0.7354 (4)|0.6430 (3)|
+
 
 ## Task
 ### Problem Definition
