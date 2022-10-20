@@ -1,0 +1,487 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PMQ8CBX');</script>
+        <!-- End Google Tag Manager -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="https://www.johndyergems.com/favicon.ico">
+        <title>John Dyer/Precious Gemstones Co.</title>
+        <!-- for responsive design -->
+        <!-- Bootstrap -->
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <!-- JD CSS -->
+        <link href="../resp-jd-styles-bootstrap.css" rel="stylesheet" type="text/css">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- need to load jquery before the nav or the dropdowns won't load-->
+        <script src="../js/jquery-1.11.3.min.js"></script>
+        <!-- JD JS -->
+        <script src="../resp-jdhelper.js"></script>
+        <script>
+// load the shopping cart info
+$(document).ready(function() {
+	// if the current URL is the same as the referring one, then it means they removed
+	// an item from their cart. show the modal
+	var referrer =  document.referrer;
+	var currenturl = window.location.href;
+	// alert(referrer);
+	// alert(currenturl);
+
+	if (referrer === currenturl) {
+
+		// update the cart data
+		$(function () {
+			$.ajax({
+				type: 'post',
+				url: '../resp-modal-shopping-cart.php',
+				success: function (text) {
+					response = text;
+					//alert(response);
+					document.getElementById("show-shoppping-cart").innerHTML = response;
+				}
+			});
+		});
+
+		// check cookie to see if we want to show the cart
+		var status = getCookie("JDshop");
+		// alert(status);
+		if (status === "hide") {
+			// alert("should be hiding the cart");
+		}
+		else {
+			// alert("should be showng the cart");
+			$(document).ready(function() {
+				$("#ModalShopping").show();
+				toggleModal('ModalShopping', 'shopping-cart', 'closeShopping');
+			});
+		}
+
+	}
+});
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+</script>
+        <!-- This script uses ajax to call the update cart PHP file -->
+        <script>
+      $(function () {
+
+        $(".frm-add2cart").on('submit', function (e) {
+
+          e.preventDefault();
+
+          $.ajax({
+            type: 'post',
+            url: '../resp-update-cart.php',
+            data: $(this).serialize(),
+            success: function (text) {
+            	response = text;
+				//alert(response);
+			    $("#ModalShopping").show();
+			    toggleModal('ModalShopping', 'shopping-cart', 'closeShopping')
+				document.getElementById("show-shoppping-cart").innerHTML = response;
+
+				// update the shopping cart button and number of gems in the toolbar
+				$.ajax({
+            		type: 'post',
+            		url: '../resp-shopping-cart-link.php',
+            		success: function (text) {
+            			response = text;
+						//alert(response);
+						document.getElementById("get-cart-items").innerHTML = response;
+            		}
+          		});
+
+				// update the shopping cart dropdown content
+				$.ajax({
+            		type: 'post',
+            		url: '../resp-modal-shopping-cart.php',
+            		success: function (text) {
+            			response = text;
+						//alert(response);
+						document.getElementById("show-shoppping-cart").innerHTML = response;
+            		}
+          		});
+            }
+          });
+
+        });
+
+      });
+</script>
+        <!-- This script uses ajax to get the numbr of items in the shopping cart -->
+        <script>
+	$(function () {
+
+		$.ajax({
+			type: 'post',
+			url: '../resp-shopping-cart-link.php',
+ 			success: function (text) {
+				response = text;
+				//alert(response);
+				document.getElementById("get-cart-items").innerHTML = response;
+            }
+		}).done(function() {
+ 			// alert( "finished getting link" );
+			// This script uses ajax to get shopping cart show we can show it
+			$(function () {
+				  $.ajax({
+					type: 'post',
+					url: '../resp-modal-shopping-cart.php',
+					success: function (text) {
+						response = text;
+						//alert(response);
+						document.getElementById("show-shoppping-cart").innerHTML = response;
+					}
+				  });
+      		});
+		});
+      });
+</script>
+        <!-- Get the user's login status -->
+        <script>
+	$(function () {
+		$.ajax({
+			type: 'post',
+			url: '../resp-login-status.php',
+ 			success: function (text) {
+				response = text;
+				//alert(response);
+				document.getElementById("show-login-status").innerHTML = response;
+            }
+		})
+      });
+</script>
+        <script>
+// use this function to toggle the catalog navigation on mobile platform
+$(document).ready(function(){
+    $("#catalog-nav-button").click(function(){
+        $("#catalog-nav").toggle(500);
+    });
+});
+</script>
+        <script>
+function toggleHamburger(x) {
+    x.classList.toggle("change");
+}
+</script>
+        <!-- Add the code to load the Javascript SDK for Facebook -->
+        <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMQ8CBX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div id="banner-background-img">
+            <a href="../index.html"><img class="logo-img" src="../art/resp-jd-logo.png" alt="John Dyer Gems"></a>
+        </div>
+        <div id="banner-background">
+</div>
+        <nav id="banner" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" id="menu-toggle-button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">
+                        <div class="button-label white">Menu</div>
+                        <div id="mobile-menu-button">
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="defaultNavbar1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gem Catalog<span class="caret"></span></a>
+                            <div id="dropdown-gemcatalog" class="dropdown-menu meganav-content" role="menu">
+                                <!-- pull the gem catalog dropdown content from a file -->
+                                <script>
+                                    $( "#dropdown-gemcatalog" ).load( "../resp-dropdown-gemcatalog.html #displayGemcatalog" );
+		                    	</script>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gem Info<span class="caret"></span></a>
+                            <div id="dropdown-geminfo" class="dropdown-menu meganav-content" role="menu">
+                                <!-- pull the gem catalog dropdown content from a file -->
+                                <script>
+                                      $( "#dropdown-geminfo" ).load( "../resp-dropdown-geminfo.html #displayInfo" );
+			                    </script>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gems to Jewelry<span class="caret"></span></a>
+                            <div id="dropdown-gems2jewelry" class="dropdown-menu meganav-content" role="menu">
+                                <!-- pull the gem catalog dropdown content from a file -->
+                                <script>
+                                    $( "#dropdown-gems2jewelry" ).load( "../resp-dropdown-gems2jewelry.html #displayAwards" );
+		                    	</script>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About John &#38; Contact<span class="caret"></span></a>
+                            <div id="dropdown-aboutjohn" class="dropdown-menu meganav-content" role="menu">
+                                <!-- pull the gem catalog dropdown content from a file -->
+                                <script>
+                                    $( "#dropdown-aboutjohn" ).load( "../resp-dropdown-aboutjohn.html #displayAbout" );
+		                    	</script>
+                            </div>
+                        </li>
+                        <li id="room4cart"></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown-toggle">
+                            <a href="../index.html"><span class="glyphicon glyphicon-home"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-10 col-md-offset-0 col-md-12">
+                    <div id="mainContent">
+                        <button id="shopping-cart" class="empty-cart" onclick="toggleModal('ModalShopping', 'shopping-cart', 'closeShopping')">
+                            <!-- get number of shopping cart items -->
+                            <div id="get-cart-items">
+</div>
+                        </button>
+                        <div id="ModalShopping" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content dropdown-content-gemstone1">
+                                <div id="closeShopping" class="close-cart">
+                                    <span id="keep-shopping">Keep Shopping</span>
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </div>
+                                <!-- grab the shopping cart -->
+                                <div id="show-shoppping-cart">
+                                    <p>Show Shopping Cart</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="show-login-status"></div>
+                        <!-- end header, begin the page content here -->
+                        <h1>Oops ... We could not find it.</h1>
+                        <big><br> </big>
+                        <div style="text-align: center;">
+                            <h2>You have requested a page which no longer exists.<br>
+Here are a few options to find what your looking for.</h2>
+                            <br>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-8 col-xs-12 center-block col-md-push-2">
+                                <a href="https://www.johndyergems.com/catalog_pages/gemstone-feature-New.html"> <img src="https://www.johndyergems.com/art/new-gemstone-for-sale-banner.jpg" alt="New Gemstones for sale in our catalog" class="img-responsive" data-pg-name="New Gemstones For Sale" id="New gemstones in our catalog" title="John Dyer Gemstones for sale"> </a>
+                            </div>
+                        </div>
+                        <!-- SALE OR SHOW BANNER END -->
+                        <br>
+                    </div>
+                    <div class="text-right col-sm-6 col-md-3 col-md-offset-0">
+                        <div class="thumbnail">
+                            <link/>
+                            <a href="https://www.johndyergems.com/catalog_pages/gemstone-stone-Sapphire.html"> <img src="https://www.johndyergems.com/art/sapphire-for-sale.jpg" alt="Sapphire for sale">
+                        </div>
+                    </div>
+                    <div class="text-right col-sm-6 col-md-3 col-md-offset-1">
+                        <div class="thumbnail">
+                            <link/>
+                            <a href="https://www.johndyergems.com/catalog_pages/gemstone-stone-Sunstone.html"> <img src="https://www.johndyergems.com/art/oregon-sunstone-for-sale.jpg" alt="Oregon Sunstone for sale">
+                        </div>
+                    </div>
+                    <div class="text-right col-sm-6 col-md-3 col-md-offset-1">
+                        <div class="thumbnail">
+                            <link/>
+                            <a href="https://www.johndyergems.com/catalog_pages/gemstone-stone-Aquamarine.html"> <img src="https://www.johndyergems.com/art/aquamarine-gemstones-for-sale.jpg" alt="Aquamarine Gemstones for sale">
+                        </div>
+                    </div>
+                    <div class="text-right col-sm-6 col-md-3 col-md-offset-0">
+                        <div class="thumbnail">
+                            <link/>
+                            <a href="https://www.johndyergems.com/catalog_pages/gemstone-stone-Morganite.html"> <img src="https://www.johndyergems.com/art/morganite-for-sale.jpg" alt="Morganite for sale">
+                        </div>
+                    </div>
+                    <div class="text-right col-sm-6 col-md-3 col-md-offset-1">
+                        <div class="thumbnail">
+                            <link/>
+                            <a href="https://www.johndyergems.com/catalog_pages/gemstone-stone-Tourmaline.html"> <img src="https://www.johndyergems.com/art/tourmaline-for-sale.jpg" alt="Tourmalines for sale">
+                        </div>
+                    </div>
+                    <div class="text-right col-sm-6 col-md-3 col-md-offset-1">
+                        <div class="thumbnail">
+                            <link/>
+                            <a href="https://www.johndyergems.com/catalog_pages/gemstone-stone-Garnet.html"> <img src="https://www.johndyergems.com/art/garnet-for-sale.jpg" alt="Garnets for sale.">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-md-8 col-xs-12 center-block col-md-push-2">
+                                <a href="https://www.johndyergems.com/catalog_pages/catalog_main.html#detailed-search"> <img src="https://www.johndyergems.com/art/search-gemstones.jpg" alt="Search Gemstones for sale in our catalog" class="img-responsive" data-pg-name="Search Gemstones For Sale" id="Search gemstones in our catalog" title="John Dyer Gemstones for sale"> </a>
+                            </div>
+                        </div>
+                        <p><br> </p>
+                        <p style="text-align: center;"><span class="searchtext"><a href="javascript:history.go(-1)">Go Back</a> | <a href="../catalog_pages/catalog_main.html">Main Catalog</a></span></p>
+                        <!-- begin the page footer here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerbar">
+            <!-- Small footerbar at the bottom -->
+            <div id="footer-content" class="center">
+                <div id="bottom-nav-buttons">
+                    <div class="footer-buttons">
+                        <a href="javascript:;" onclick="window.scrollTo(0, 0);"><img src="../art/resp-icon-back-to-top.png" alt="Top"><br>To Top</a>
+                    </div>
+                    <div class="footer-buttons">
+                        <a href="../index.html"><img src="../art/resp-icon-home.png" alt="home"><br>Home</a>
+                    </div>
+                    <div class="footer-buttons">
+                        <a href="catalog_main.html"><img src="../art/resp-icon-catalog.png" alt="Gem Catalog"><br>Catalog</a>
+                    </div>
+                </div>
+                <p>Copyright &copy; <script>
+			var theDate=new Date()
+			document.write(theDate.getFullYear())
+		</script>
+		 John Dyer/Precious Gemstones Inc. </p>
+                <p>We cannot be held responsible for errors or omissions. This website and its contents are copyrighted for the exclusive use of our customers, all other use is prohibited.</p>
+                <h4><a href="../privacy-policy.html">Read our privacy policy.</a></h4>
+            </div>
+        </div>
+        <script>
+// Javascript for the modal pop-up menus
+
+function toggleModal(modal, btn, closebtn) {
+
+  // Get the modal
+  var modal = document.getElementById(modal);
+
+  // Get the button that opens the modal
+  var btn = document.getElementById(btn);
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementById(closebtn);
+
+  modal.style.display = "block";
+
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+	  modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+	  modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+	  if (event.target == modal) {
+		  modal.style.display = "none";
+	  }
+  }
+}
+
+
+function closeModal(modal, closebtn) {
+
+  // Get the modal
+  var modal = document.getElementById(modal);
+
+  // Get the <span> element that closes the modal
+	// not using this var, but keeping it for now
+  var span = document.getElementById(closebtn);
+
+  //modal.style.display = "none";
+  jQuery(modal).hide();
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+	  if (event.target == modal) {
+		  modal.style.display = "none";
+	  }
+  }
+}
+</script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../js/bootstrap.js"></script>
+        <!-- put in text links for people who dont have JS-->
+        <noscript>
+            <div id="noscript-warning">
+                <nav id="banner1" class="navbar navbar-inverse navbar-fixed-top">
+                    <span class="noscript white right"><b>This site works best with JavaScript enabled</b></span>
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button id="menu-toggle-button1" class="navbar-toggle collapsed">
+                                <div class="button-label white">
+                                    <a href="../resp-navigation.html">Menu</a>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="defaultNavbar11">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="../resp-navigation.html#gemcatalog" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gem Catalog</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="../resp-navigation.html#info" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gem Info</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="../resp-navigation.html#awards" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gems to Jewelry</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="../resp-navigation.html#aboutus" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About John &#38; Contact</a>
+                                </li>
+                                <li id="room4cart1"></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown-toggle">
+                                    <a href="../index.html"><span class="glyphicon glyphicon-home"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+        </noscript>
+    </body>
+</html>

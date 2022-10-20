@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Temporary Page</title>
+    <link rel="shortcut icon" href="https://cf.wpx.net/favicon.ico" type="image/x-icon" >
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+        body {
+            color: #fff;
+            background: linear-gradient(-45deg,#fc5819, #961251);
+        }
+
+        h1,
+        h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            font-size: 1.60rem;
+            text-align: center;
+            position: absolute;
+            right: 0;
+            left: 0;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        a {
+            color: #fff;
+            text-align: center;
+        }
+
+            a:hover {
+                color:#961251;
+            }
+
+        .button {
+            border-radius: 3rem;
+            background-color: #961251;
+            padding: 8px 20px;
+        }
+            .button:hover {
+                background-color: #fc5819;
+                color: #fefefe;
+                -webkit-transition: background-color 0.3s;
+                -moz-transition: background-color 0.3s;
+                -o-transition: background-color 0.3s;
+                transition: background-color 0.3s;
+            }
+    </style>
+</head>
+<body>
+    <h1>
+        <a href="https://wpx.net/wordpress-speed/wpx-hosting-promo-coupon-discount-code/" target="_blank"><img src="https://cf.wpx.net/img/No-Website-Installed.png" style="width: 450px;" /></a>
+        <br />
+        &nbsp;
+        <br />
+        <span style="font-weight: 500;">You have reached an error page on WPX.net</span>
+        <br />
+        &nbsp;
+        <br />
+        If you are seeing this page, it is because there is no website installed on this domain yet.
+        <br />
+        &nbsp;
+        <br />
+        You can see how WPX.net dominated global speed average time testing on independent WordPress hosting comparisons <b><a href="https://blog.wpx.net/reviewsignals-independent-wp-tests-2021-how-our-xdn-helped-us-win-3-out-of-3-speed-categories/" target="_blank">here</a></b>.
+        <br />
+        &nbsp;
+        <br />
+        "WPX is the fastest WordPress host… with first-class support!”<br />
+        <i>Matthew Woodward</i><br />
+        <span style="font-size:1.5rem;"><i>(award-winning tech blogger)</i></span>
+        <br />
+        &nbsp;
+        <br />
+        And you can view the feedback from over 1,000 WPX customers on the world's largest customer review website, Trustpilot.com, <b><a href="https://www.trustpilot.com/review/wpxhosting.com" target="_blank">here</a></b>.
+        <br />
+        &nbsp;
+        <br />
+        Find the right hosting plan for you on the world's fastest WordPress hosting service <b><a href="https://wpx.net/cart/wordpress-hosting/" target="_blank">here</a></b>.
+        <br />
+        &nbsp;
+        <br />
+        <a href="https://de.wpx.net" target="_blank"><img class="img-responsive" src="https://cf.wpx.net/img/logos-badges/CMYK/WPX_Logo_White_and_Yellow_Preview.svg" style="width: 100px;" /></a>
+        <br />
+        &nbsp;
+        <br />
+    </h1>
+</body>
+</html>
